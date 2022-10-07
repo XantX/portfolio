@@ -1,4 +1,32 @@
-*{
-	padding: 0px;
-	margin: 0px;
+.background{
+  background-color: var(--bg_s);
+}
+.gruv-nav-link{
+  color: var(--fg);
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+.gruv-nav-link:hover{
+  color: var(--green);
+}
+
+.colors{
+  color: var(--fg);
+}
+
+.gruv-nav-brand{
+  color: var(--fg);
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+}
+
+.gruv-nav-brand:hover{
+  color: var(--green);
+}
+
+.icons-container{
+  display:block;
+  font-size: 2rem;
 }
