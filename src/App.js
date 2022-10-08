@@ -1,5 +1,6 @@
 import './App.css';
 import './shared/gruvbox-dark.css'
+import './shared/bootstrap-theme.css'
 import Banner from './components/banner/banner.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'

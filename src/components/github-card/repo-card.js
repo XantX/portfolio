@@ -1,23 +1,17 @@
-import './github-card.css'
-import axios from 'axios';
+import './repo-card.css'
 import { useEffect, useState } from 'react';
+import api_github from './github-services/axios-api'
 
-const api = axios.create({
-  baseURL: `https://api.github.com/`
-})
-
-function GithubCard({ repoName }) {
+function RepoCard(props) {
   const [repo, setRepo] = useState()
-
   useEffect(() => {
-    api.get(`/repos/xantx/${repoName}`).then(res => {
+    api_github.get(`/repos/xantx/${props.repoName}`).then(res => {
       setRepo(res.data)
     })
   }, [])
-
   return (
     <div className="text-wrap">
-      {!repo ? 'Loading...' :
+      {!repo ? <h5>Loading...</h5> :
         <div className="card">
           <h5 className="card-header text-end">
             Stars: {repo.stargazers_count} Forks: {repo.forks}
@@ -36,4 +30,4 @@ function GithubCard({ repoName }) {
   );
 }
 
-export default GithubCard;
+export default RepoCard;
