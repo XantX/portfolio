@@ -1,8 +1,10 @@
 import axios from 'axios';
-const token = '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'
+
+const api_key = process.env.REACT_APP_API_KEY
+
 const api = axios.create({
   baseURL: `https://api.github.com/`,
-  headers: {'Authorization': `bearer ${token}`}
+  headers: { 'Authorization': `bearer ${api_key}` }
 })
 
 
