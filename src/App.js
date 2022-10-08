@@ -8,7 +8,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 function App() {
   return (
     <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-dark background">
+      <nav className="sticky-top navbar navbar-expand-lg navbar-dark background">
         <a className="gruv-nav-brand navbar-brand" href="https:\\google.com.pe">XantX</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

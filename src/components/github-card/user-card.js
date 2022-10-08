@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import api_github from "./github-services/axios-api";
 import './user-card.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faEarthAmericas, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faEarthAmericas, faUser, faStar } from '@fortawesome/free-solid-svg-icons'
 
 function UserCard() {
   const [user, setUser] = useState()
@@ -15,6 +15,8 @@ function UserCard() {
     <div className="text-wrap user-card-container">
       {!user ? <h5>Loading...</h5> :
         <div className="card user-card">
+          <p className="card-header"> Followers: {user.followers} <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></p>
+
           <img src={user.avatar_url} className="card-img-top" alt="avatar" />
           <div className="card-body">
             <h5 className="card-title">User: {user.login} <FontAwesomeIcon icon={faUser}></FontAwesomeIcon></h5>
