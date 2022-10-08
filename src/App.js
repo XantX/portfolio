@@ -2,7 +2,7 @@ import './App.css';
 import './shared/gruvbox-dark.css'
 import Banner from './components/banner/banner.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 function App() {
   return (
@@ -25,18 +25,13 @@ function App() {
             </li>
           </ul>
           <div className='icons-container me-4'>
-            <ul className="navbar-nav me-auto">
-              <li className="nav-item">
-                <a target={'_blank'} className="gruv-nav-link nav-link" href="https:\\github.com\XantX">
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a target={'_blank'} className="gruv-nav-link nav-link" href="https:\\www.linkedin.com\in\sebastian-diaz-torres-43058a161">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </li>
-            </ul>
+            <a target={'_blank'} className="gruv-nav-link nav-link" href="https:\\github.com\XantX">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+
+            <a target={'_blank'} className="gruv-nav-link nav-link" href="https:\\www.linkedin.com\in\sebastian-diaz-torres-43058a161">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
           </div>
         </div>
       </nav>

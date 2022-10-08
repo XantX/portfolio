@@ -27,6 +27,6 @@
 }
 
 .icons-container{
-  display:block;
+  display: flex;
   font-size: 2rem;
 }

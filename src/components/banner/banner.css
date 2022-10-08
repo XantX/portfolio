@@ -1,15 +1,17 @@
 .banner-container{
   height: 50vh;
   display: flex;
-  padding: 2.5rem;
+  padding: 4rem;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--blue);
+  background-color: var(--green-dim);
 }
 .title{
   margin-top: 0px;
   font-size: 4rem;
+  color: var(--fg2);
 }
 .subtitle{
   font-size: 2rem;
+  color: var(--fg2);
 }
