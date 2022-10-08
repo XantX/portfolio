@@ -7,7 +7,7 @@ function Banner() {
       <div className="row">
         <div className="col left">
           <h1 className="title">My Porfolio</h1>
-          <p className="subtitle">Hi mi name is <strong className="bg2">Sebastian</strong> aka. <strong className="bg2">XantX</strong></p>
+          <p className="subtitle">Hi mi name is <strong className="green">Sebastian</strong> aka. <strong className="green">XantX</strong></p>
         </div>
         <div className="col">
           <UserCard></UserCard>
