@@ -1,0 +1,8 @@
+.hr-color{
+    border-color: var(--aqua) !important;
+}
+.tech-icon{
+  color: var(--fg);
+  text-decoration: none;
+  padding: 10px 10px;
+}

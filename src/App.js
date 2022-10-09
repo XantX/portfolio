@@ -4,6 +4,7 @@ import './shared/bootstrap-theme.css'
 import Banner from './components/banner/banner.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import PresentacionCard from './components/presentation-card/presentation-card';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         </div>
       </nav>
       <Banner />
+      <PresentacionCard/>
     </div>
   );
 }

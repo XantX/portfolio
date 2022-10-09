@@ -8,7 +8,7 @@ function RepoCard(props) {
     api_github.get(`/repos/xantx/${props.repoName}`).then(res => {
       setRepo(res.data)
     })
-  }, [])
+  }, [props.repoName])
   return (
     <div className="text-wrap">
       {!repo ? <h5>Loading...</h5> :
