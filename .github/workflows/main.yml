@@ -13,7 +13,6 @@ jobs:
     env:
       REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }} 
       Llave: Hola
-      secretos: ${{secrets}}
 
     steps:
       - name: Checkout
