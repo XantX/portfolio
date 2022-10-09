@@ -12,6 +12,8 @@ jobs:
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
+    env:
+      key: ${{secrets.REACT_APP_API_KEY}}
 
     steps:
       - name: Checkout
@@ -22,7 +24,7 @@ jobs:
       
       - name: Deploy
         run: |
-          echo ${{ secrets.REACT_APP_API_KEY }}
+          echo "$key" 
           git config --global user.name 'XantX'
           git config --global user.email 'hp_xantx@hotmail.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
