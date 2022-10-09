@@ -11,9 +11,9 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     env:
-      REACT_APP_API_KEY: llave
-      Key: ${{ secrets.REACT_APP_API_KEY }}
+      REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }} 
       Llave: Hola
+      secretos: ${{secrets}}
 
     steps:
       - name: Checkout
