@@ -11,7 +11,7 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     env:
-      REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }} 
+      REACT_APP_API_KEY: ${{ secrets.API_KEY }} 
       Llave: Hola
 
     steps:
@@ -22,7 +22,9 @@ jobs:
         run: npm install && npm run build
       
       - name: Test env
-        run: echo "$Llave $Key"
+        run: echo "$TEST"
+        env:
+          TEST: ${{ secrets.API_KEY }}
 
       - name: Deploy
         run: |
