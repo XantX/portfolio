@@ -10,7 +10,7 @@ root.render(
   <HashRouter>
     <Routes>
       <Route path='/' element={<App />} />
-      <Route path='/static/*' element={<App />} />
+      <Route path='*' element={<App />} />
     </Routes>
   </HashRouter>
 );
