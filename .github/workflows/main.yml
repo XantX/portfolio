@@ -9,22 +9,16 @@ env:
   REACT_APP_API_KEY: ${{secrets.REACT_APP_API_KEY}}
 
 jobs:
-  build:
+  build-and-deploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-    
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Install and build
         run: npm install && npm run build
       
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.        
+        run: npm run deploy
