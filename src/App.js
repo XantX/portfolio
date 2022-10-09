@@ -26,11 +26,11 @@ function App() {
             </li>
           </ul>
           <div className='icons-container me-4'>
-            <a target={'_blank'} className="gruv-nav-link nav-link" href="https:\\github.com\XantX">
+            <a className="gruv-nav-link nav-link" href="https:\\github.com\XantX">
               <FontAwesomeIcon icon={faGithub} />
             </a>
 
-            <a target={'_blank'} className="gruv-nav-link nav-link" href="https:\\www.linkedin.com\in\sebastian-diaz-torres-43058a161">
+            <a className="gruv-nav-link nav-link" href="https:\\www.linkedin.com\in\sebastian-diaz-torres-43058a161">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
