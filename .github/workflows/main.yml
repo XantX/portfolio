@@ -21,4 +21,8 @@ jobs:
         run: npm install && npm run build
       
       - name: Deploy
-        run: npm run deploy
+        run: |
+          git config --global user.name 'XantX'
+          git config --global user.email 'hp_xantx@hotmail.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          npm run deploy
