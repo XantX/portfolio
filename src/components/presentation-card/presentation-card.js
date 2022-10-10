@@ -4,10 +4,10 @@ import { faHtml5, faReact, faCss3, faBootstrap, faJava, faNodeJs, faPython } fro
 
 function PresentacionCard() {
   return (
-    <div className="container p-5">
+    <div className="container p-5"  id="about">
       <div className="card">
         <div className="card-body">
-          <h5 className="card-title">About Me</h5>
+          <h5 className="card-title fs-3 ">About Me</h5>
           <p className="card-text">
             I am an analytical person and I like to improve my skills
             constantly. I give my best when doing my job and I relate well with
@@ -20,7 +20,7 @@ function PresentacionCard() {
           <hr class="hr-color border border-2 opacity-50"></hr>
           <div className="row">
             <div className="col orange mt-2">
-              <h5 className="card-title">Bakend Skills</h5>
+              <h5 className="card-title fs-4">Backend Skills</h5>
               <p className="card-text">
                 I specialize in backend technologies such as:
               </p>
@@ -31,7 +31,7 @@ function PresentacionCard() {
               </div>
             </div>
             <div className="col yellow mt-2">
-              <h5 className="card-title">Frontend Skills</h5>
+              <h5 className="card-title fs-4">Frontend Skills</h5>
               <p className="card-text">
                 I specialize in frontend technologies such as:
               </p>
