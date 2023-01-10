@@ -1,3 +1,3 @@
-#  My own porfolio
+#  My own portfolio
 
-Porfolio create to show my profecional experience.
+Portfolio create to show my professional experience.
