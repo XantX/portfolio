@@ -9,13 +9,22 @@ function PresentacionCard() {
         <div className="card-body">
           <h5 className="card-title fs-3 ">About Me</h5>
           <p className="card-text">
-            I am an analytical person and I like to improve my skills
-            constantly. I give my best when doing my job and I relate well with
-            my team.
+            👋 Hi, I'm Sebastián! Software engineering student and Backend Developer intern at CloudAppi Peru.
           </p>
           <p className="card-text">
-            I consider myself a valuable asset to companies because of my
-            analytical skills when doing my job.
+            👨🎓 In my university path, I was able to improve my analytical skills and my mindset when solving problems. In addition, I was able to develop my soft skills by working in very diverse teams and on different projects.  👨🎓 In my university path I was able to improve my analytical skills and my mindset when solving problems. In addition, I was able to develop my soft skills by working in very diverse teams and on different projects.
+          </p>
+          <p className="card-text">
+            This helped me to not only understand my coworkers better, but also to be passionate about my work. I love developing software projects from start to finish 💙. I am passionate about applying best practices in both code scope and project structures.
+          </p>
+          <p className="card-text">
+            I am always developing my ability to be able to understand the requirements that are asked of me. So that I can communicate better with my superiors and be able to put out a quality product.
+          </p>
+          <p className="card-text">
+            🎯 I aim to keep improving my skills as a developer in order to become a software architect and have the ability to provide good quality solutions.
+          </p>
+          <p className="card-text">
+            If you want to know more about me, you can contact me on LinkedIn or email me and we can talk 😀.
           </p>
           <hr class="hr-color border border-2 opacity-50"></hr>
           <div className="row">
