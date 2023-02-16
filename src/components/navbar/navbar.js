@@ -1,19 +1,22 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import TraslateButton from "../traslate-button/traslate-button";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const { t } = useTranslation('navbar')
   return (
     <nav
-      class="sticky-top navbar navbar-expand-lg background"
+      className="sticky-top navbar navbar-expand-lg background"
       id="navbar-principal"
     >
-      <div class="container-fluid">
+      <div className="container-fluid">
         <a className="gruv-nav-brand" href="#top">
           XantX
         </a>
 
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -21,24 +24,24 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <a className=" gruv-nav-link" href="#about">
-                About me
+                {t('about_me_section')}
               </a>
             </li>
             <li className="nav-item">
               <a className="gruv-nav-link" href="#experience">
-                Experience
+                {t('experience_section')}
               </a>
             </li>
             <li className="nav-item">
               <a className="gruv-nav-link" href="#projects">
-                Projects
+                {t('projects_section')}
               </a>
             </li>
           </ul>
@@ -56,6 +59,7 @@ function Navbar() {
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
+            <TraslateButton></TraslateButton>
           </div>
         </div>
       </div>

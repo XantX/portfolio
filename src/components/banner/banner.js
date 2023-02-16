@@ -1,13 +1,15 @@
+import { useTranslation } from "react-i18next";
 import UserCard from "../github-card/user-card";
 import "./banner.css"
 
 function Banner() {
+  const { t } = useTranslation('banner');
   return (
     <div className="banner-container text-wrap"  >
       <div className="row" id="home">
         <div className="col left">
-          <h1 className="title">My Porfolio</h1>
-          <p className="subtitle">Hi mi name is <strong className="blue">Sebastian</strong> aka. <strong className="blue">XantX</strong></p>
+          <h1 className="title">{t('title')}</h1>
+          <p className="subtitle">{t('greetings')} <strong className="blue">{t('name')}</strong> {t('ligature')} <strong className="blue">{t('aka')}</strong></p>
         </div>
         <div className="col">
           <UserCard></UserCard>

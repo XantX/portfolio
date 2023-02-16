@@ -10,6 +10,11 @@
   font-size: 4rem;
   color: var(--aqua);
 }
+@media screen and ( max-width: 500px) {
+  .title{
+    font-size: 3rem;
+  }
+}
 .subtitle{
   font-size: 2rem;
   color: var(--fg2);

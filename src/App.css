@@ -36,5 +36,8 @@
 
 .icons-container{
   display: flex;
+}
+
+.icons-container .gruv-nav-link{
   font-size: 2rem;
 }
