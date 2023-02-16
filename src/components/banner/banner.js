@@ -11,7 +11,7 @@ function Banner() {
           <h1 className="title">{t('title')}</h1>
           <p className="subtitle">{t('greetings')} <strong className="blue">{t('name')}</strong> {t('ligature')} <strong className="blue">{t('aka')}</strong></p>
         </div>
-        <div className="col">
+        <div className="col col-user-card">
           <UserCard></UserCard>
         </div>
       </div>

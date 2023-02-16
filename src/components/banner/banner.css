@@ -5,6 +5,11 @@
   flex-direction: column;
   background-color: var(--bg_s);
 }
+@media screen and ( max-width: 500px) {
+  .banner-container{
+    padding: 2rem;
+  }
+}
 .title{
   margin-top: 0px;
   font-size: 4rem;

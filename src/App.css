@@ -1,6 +1,13 @@
 .background{
   background-color: var(--bg);
 }
+
+@media screen and ( max-width: 800px) {
+  .col-user-card {
+    display: flex;
+    justify-content: center;
+  }
+}
 .gruv-nav-link{
   display: block;
   color: var(--fg);

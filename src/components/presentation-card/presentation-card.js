@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 function PresentacionCard() {
   const { t } = useTranslation('presentation_card')
   return (
-    <div className="container p-5"  id="about">
+    <div className="container pt-5 pb-5"  id="about">
       <div className="card">
         <div className="card-body">
           <h5 className="card-title fs-3 ">{t('title')}</h5>
