@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import TraslateButton from "../traslate-button/traslate-button";
 import { useTranslation } from "react-i18next";
+import './navbar.css';
 
 function Navbar() {
   const { t } = useTranslation('navbar')
@@ -16,7 +17,7 @@ function Navbar() {
         </a>
 
         <button
-          className="navbar-toggler"
+          className="navbar-toggler toogle-colors"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -24,7 +25,7 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon toggle-colors-span"></span>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
