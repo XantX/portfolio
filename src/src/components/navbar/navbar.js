@@ -3,14 +3,9 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import TraslateButton from "../traslate-button/traslate-button";
 import { useTranslation } from "react-i18next";
 import './navbar.css';
-import CvDowndloadButton from "../cv-download-button/cv-download-button";
 
 function Navbar() {
   const { t } = useTranslation('navbar')
-  let showToolTip = false;
-  const handleShowToolTip = () => {
-    showToolTip = true;
-  }
   return (
     <nav
       className="sticky-top navbar navbar-expand-lg background"
@@ -52,7 +47,6 @@ function Navbar() {
             </li>
           </ul>
           <div className="icons-container me-4">
-            <CvDowndloadButton></CvDowndloadButton>
             <a
               className="gruv-nav-link nav-link"
               href="https:\\github.com\XantX"

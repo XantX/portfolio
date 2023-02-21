@@ -11,8 +11,6 @@ import banner_en from './en/banner.json';
 import banner_es from './es/banner.json';
 import navbar_en from './en/navbar.json';
 import navbar_es from './es/navbar.json';
-import tooltip_messages_en from './en/tooptip-messages.json'
-import tooltip_messages_es from './es/tooptip-messages.json'
 
 const resources = {
   en: {
@@ -20,16 +18,14 @@ const resources = {
     presentation_card: presentation_card_en,
     languages: languages_en,
     banner: banner_en,
-    navbar: navbar_en,
-    tooltip_messages: tooltip_messages_en
+    navbar: navbar_en
   },
   es: {
     github_user_card: github_traslation_es,
     presentation_card: presentation_card_es,
     languages: languages_es,
     banner: banner_es,
-    navbar: navbar_es,
-    tooltip_messages: tooltip_messages_es
+    navbar: navbar_es
   }
 };
 

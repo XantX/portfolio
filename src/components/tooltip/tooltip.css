@@ -1,0 +1,8 @@
+.custom-tooltip {
+  position: absolute;
+  background-color: var(--bg);
+  color: var(--fg);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}

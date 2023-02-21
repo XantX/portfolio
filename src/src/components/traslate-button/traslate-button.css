@@ -1,0 +1,7 @@
+.traslation_dropdown {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-left: 0.2rem;
+  font-size: 1.2rem;
+}

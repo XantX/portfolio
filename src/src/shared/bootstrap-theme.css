@@ -1,0 +1,23 @@
+.btn-primary {
+  background-color: var(--gray);
+  border-color: var(--gray);
+  color: var(--fg);
+}
+
+.btn-primary:hover {
+  background-color: var(--blue-dim);
+  border-color: var(--blue-dim);
+  color: var(--fg);
+}
+
+.card-header{
+  background-color: var(--bg1);
+}
+
+.card-body{
+  background-color: var(--bg2);
+}
+.card{
+  border-color: var(--bg1);
+  color: var(--fg2);
+}
