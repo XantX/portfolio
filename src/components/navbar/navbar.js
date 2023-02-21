@@ -7,10 +7,6 @@ import CvDowndloadButton from "../cv-download-button/cv-download-button";
 
 function Navbar() {
   const { t } = useTranslation('navbar')
-  let showToolTip = false;
-  const handleShowToolTip = () => {
-    showToolTip = true;
-  }
   return (
     <nav
       className="sticky-top navbar navbar-expand-lg background"
