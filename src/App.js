@@ -4,6 +4,7 @@ import "./shared/bootstrap-theme.css";
 import Banner from "./components/banner/banner.js";
 import PresentacionCard from "./components/presentation-card/presentation-card";
 import Navbar from "./components/navbar/navbar";
+import Experience from "./components/experience/experience";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       >
         <Banner />
         <PresentacionCard />
+        <Experience />
       </div>
     </div>
   );

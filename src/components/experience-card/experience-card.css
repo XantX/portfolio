@@ -1,0 +1,12 @@
+.fecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.fecha h4 {
+  background-color: var(--fg);
+  padding: .4rem;
+  border-radius: 10px;
+}

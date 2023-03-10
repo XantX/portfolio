@@ -15,7 +15,7 @@ function UserCard() {
   }, [])
   return (
     <div className="text-wrap user-card-container">
-      {!user ? <h5 className="fg">Loading...</h5> :
+      {!user ? <h5 className="fg">{t('loading-message')}</h5> :
         <div className="card user-card">
           <p className="card-header"> {t('followers')} {user.followers} <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></p>
 

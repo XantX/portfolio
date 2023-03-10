@@ -1,0 +1,27 @@
+{
+  "companies" : [
+    {
+      "name": "CloudAppiPeru",
+      "description": "Experts in consulting and development of APIs in the Cloud world.",
+      "logo": "https://cloudappi.net/wp-content/uploads/2021/12/LOGOCloudappi2020Versiones-01.png",
+      "cargo": "Full Stack NodeJs Developer Intern",
+      "tecnologias": [
+        "faNodeJs"
+      ]
+    },
+    {
+      "name": "Stefanini",
+      "description": "Stefanini Group, Artificial Intelligence (AI) and Information Technology (IT) solutions to transform your business",
+      "logo": "https://play-lh.googleusercontent.com/qAxU21TKGDOWsSckG9RVmy1N6mpM1IsdKwltIo8cl9E79_lb0YoyoWF7qmoFKOEqFss",
+      "end_date": "09/09/2022",
+      "cargo": ".NET Developer Analyst"
+    },
+    {
+      "name": "Luz del sur",
+      "description": "Luz del Sur is a private electricity distribution company.",
+      "logo": "https://play-lh.googleusercontent.com/c2DqwkGvigKuD40o3G9zNw4MxjItFhscYDCEZFBZTAno7kiSzAF1DP-LdYvy1psemrk",
+      "end_date": "01/04/2022",
+      "cargo": "Systems Engineer Intern"
+    }
+  ]
+}

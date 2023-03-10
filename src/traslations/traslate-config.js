@@ -13,6 +13,8 @@ import navbar_en from './en/navbar.json';
 import navbar_es from './es/navbar.json';
 import tooltip_messages_en from './en/tooptip-messages.json'
 import tooltip_messages_es from './es/tooptip-messages.json'
+import experience_data_es from './es/experience.json'
+import experience_data_en from './en/experience.json'
 
 const resources = {
   en: {
@@ -21,7 +23,8 @@ const resources = {
     languages: languages_en,
     banner: banner_en,
     navbar: navbar_en,
-    tooltip_messages: tooltip_messages_en
+    tooltip_messages: tooltip_messages_en,
+    experience_data: experience_data_en
   },
   es: {
     github_user_card: github_traslation_es,
@@ -29,7 +32,8 @@ const resources = {
     languages: languages_es,
     banner: banner_es,
     navbar: navbar_es,
-    tooltip_messages: tooltip_messages_es
+    tooltip_messages: tooltip_messages_es,
+    experience_data: experience_data_es
   }
 };
 

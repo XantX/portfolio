@@ -1,0 +1,27 @@
+{
+  "companies" : [
+    {
+      "name": "CloudAppiPeru",
+      "description": "Expertos en la consultoría y desarrollo de APIs dentro del mundo Cloud.",
+      "logo": "https://cloudappi.net/wp-content/uploads/2021/12/LOGOCloudappi2020Versiones-01.png",
+      "cargo": "Practicante Desarrollador Full Stack NodeJs",
+      "tecnologias": [
+        "faNodeJs"
+      ]
+    },
+    {
+      "name": "Stefanini",
+      "description": "Stefanini Group, soluciones de Inteligencia Artificial (IA) y Tecnología de la información (TI) para transformar su negocio",
+      "logo": "https://play-lh.googleusercontent.com/qAxU21TKGDOWsSckG9RVmy1N6mpM1IsdKwltIo8cl9E79_lb0YoyoWF7qmoFKOEqFss",
+      "end_date": "09/09/2022",
+      "cargo": "Analista desarrollador .NET"
+    },
+    {
+      "name": "Luz del sur",
+      "description": "Luz del Sur es una empresa privada de distribución de electricidad",
+      "logo": "https://play-lh.googleusercontent.com/c2DqwkGvigKuD40o3G9zNw4MxjItFhscYDCEZFBZTAno7kiSzAF1DP-LdYvy1psemrk",
+      "end_date": "01/04/2022",
+      "cargo": "Practicante de ingeniero de sistemas"
+    }
+  ]
+}
