@@ -2,7 +2,12 @@
   "homepage": "http://sebastiandiazweb.com",
   "name": "portfolio",
   "version": "0.1.0",
+  "description": "Portafolio de Sebastian Diaz Torres",
   "private": true,
+  "engines": {
+    "node": "16.13.1",
+    "npm": "8.1.2"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "6.2.0",
     "@fortawesome/free-brands-svg-icons": "6.2.0",

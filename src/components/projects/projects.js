@@ -21,7 +21,7 @@ function Projects () {
         {
           languages.map((language) => {
             const Icon = myIcons.get(language)
-            return <Icon />
+            return <Icon key={language}/>
           })
         }
       </div>
