@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './experience-card.css'
 function ExpecienceCard(props) {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
   const { t } = useTranslation('experience_data');
 
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
   useEffect(() => {
     function handleResize(){
       setScreenWidth(window.innerWidth)
