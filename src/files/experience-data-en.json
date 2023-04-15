@@ -3,8 +3,20 @@
     {
       "name": "CloudAppiPeru",
       "description": "Experts in consulting and development of APIs in the Cloud world.",
-      "logo": "https://cloudappi.net/wp-content/uploads/2021/12/LOGOCloudappi2020Versiones-01.png",
+      "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
+      "cargo": "Full Stack Developer",
+      "start_date": "01/04/2023",
+      "tecnologias": [
+        "faNodeJs"
+      ]
+    },
+    {
+      "name": "CloudAppiPeru",
+      "description": "Experts in consulting and development of APIs in the Cloud world.",
+      "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
       "cargo": "Full Stack NodeJs Developer Intern",
+      "start_date": "04/11/2022",
+      "end_date": "31/03/2023",
       "tecnologias": [
         "faNodeJs"
       ]
@@ -12,14 +24,16 @@
     {
       "name": "Stefanini",
       "description": "Stefanini Group, Artificial Intelligence (AI) and Information Technology (IT) solutions to transform your business",
-      "logo": "https://play-lh.googleusercontent.com/qAxU21TKGDOWsSckG9RVmy1N6mpM1IsdKwltIo8cl9E79_lb0YoyoWF7qmoFKOEqFss",
+      "logo": "https://github.com/XantX/portfolio/blob/master/src/img/stefanini-logo.png?raw=true",
+      "start_date": "06/04/2022",
       "end_date": "09/09/2022",
       "cargo": ".NET Developer Analyst"
     },
     {
       "name": "Luz del sur",
       "description": "Luz del Sur is a private electricity distribution company.",
-      "logo": "https://play-lh.googleusercontent.com/c2DqwkGvigKuD40o3G9zNw4MxjItFhscYDCEZFBZTAno7kiSzAF1DP-LdYvy1psemrk",
+      "logo": "https://github.com/XantX/portfolio/blob/master/src/img/luz-del-sur.png?raw=true",
+      "start_date": "08/11/2021",
       "end_date": "01/04/2022",
       "cargo": "Systems Engineer Intern"
     }

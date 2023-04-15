@@ -32,9 +32,12 @@ function ExpecienceCard(props) {
           {!props.company.end_date
             ?t('work_state_active')
             : t('work_state_inactive')}<br/>
-          {!props.company.end_date
+          {!props.company.start_date
             ?formatDate(new Date(), 'dd/mm/yy')
-            :props.company.end_date}</h4>
+            :props.company.start_date}
+          {!props.company.end_date
+            ? " "
+            :" - " + props.company.end_date}</h4>
       </div>
       <div className={`col-lg-6 col-md-6 col-sm-12 experiencia ${screenWidth > 767?order: ''} p-4`}>
         <div className={`card ${screenWidth > 767? text_position : 'text-start'}`}>

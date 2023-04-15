@@ -4,7 +4,19 @@
       "name": "CloudAppiPeru",
       "description": "Expertos en la consultoría y desarrollo de APIs dentro del mundo Cloud.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
+      "cargo": "Desarrollador Full stack",
+      "start_date": "01/04/2023",
+      "tecnologias": [
+        "faNodeJs"
+      ]
+    },
+    {
+      "name": "CloudAppiPeru",
+      "description": "Expertos en la consultoría y desarrollo de APIs dentro del mundo Cloud.",
+      "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
       "cargo": "Practicante Desarrollador Full Stack NodeJs",
+      "start_date": "04/11/2022",
+      "end_date": "31/03/2023",
       "tecnologias": [
         "faNodeJs"
       ]
@@ -13,6 +25,7 @@
       "name": "Stefanini",
       "description": "Stefanini Group, soluciones de Inteligencia Artificial (IA) y Tecnología de la información (TI) para transformar su negocio",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/stefanini-logo.png?raw=true",
+      "start_date": "06/04/2022",
       "end_date": "09/09/2022",
       "cargo": "Analista desarrollador .NET"
     },
@@ -20,6 +33,7 @@
       "name": "Luz del sur",
       "description": "Luz del Sur es una empresa privada de distribución de electricidad",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/luz-del-sur.png?raw=true",
+      "start-date": "08/11/2021",
       "end_date": "01/04/2022",
       "cargo": "Practicante de ingeniero de sistemas"
     }
