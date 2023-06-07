@@ -1,4 +1,4 @@
-import { SiNestjs, SiJavascript, SiPython, SiCss3, SiBootstrap, SiTypescript, SiHtml5, SiReact } from "react-icons/si";
+import { SiNestjs, SiJavascript, SiPython, SiCss3, SiBootstrap, SiTypescript, SiHtml5, SiReact, SiGithub } from "react-icons/si";
 import { FaNodeJs, FaJava } from 'react-icons/fa';
 
 
@@ -14,5 +14,6 @@ myIcons.set('python', SiPython)
 myIcons.set('javascript', SiJavascript)
 myIcons.set('typescrip', SiTypescript)
 myIcons.set('nestjs', SiNestjs)
+myIcons.set('github', SiGithub) 
 
 export default myIcons;

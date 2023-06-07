@@ -15,6 +15,8 @@ import tooltip_messages_en from './en/tooptip-messages.json'
 import tooltip_messages_es from './es/tooptip-messages.json'
 import experience_data_es from './es/experience.json'
 import experience_data_en from './en/experience.json'
+import project_data_es from './es/projects.json'
+import project_data_en from './en/projects.json'
 
 const resources = {
   en: {
@@ -24,7 +26,8 @@ const resources = {
     banner: banner_en,
     navbar: navbar_en,
     tooltip_messages: tooltip_messages_en,
-    experience_data: experience_data_en
+    experience_data: experience_data_en,
+    projects: project_data_en
   },
   es: {
     github_user_card: github_traslation_es,
@@ -33,7 +36,8 @@ const resources = {
     banner: banner_es,
     navbar: navbar_es,
     tooltip_messages: tooltip_messages_es,
-    experience_data: experience_data_es
+    experience_data: experience_data_es,
+    projects: project_data_es
   }
 };
 

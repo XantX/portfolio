@@ -19,7 +19,7 @@ function Experience() {
       <div id="arrow"></div>
       { experienceData ? (
         experienceData.companies.map((company, index) => (
-          <div key={company.name} className="row mt-5">
+          <div key={index} className="row mt-5">
             <div  className="col">
               <ExpecienceCard reverse={ index % 2 === 0} position={ index % 2 === 0} company={company}/>
             </div>

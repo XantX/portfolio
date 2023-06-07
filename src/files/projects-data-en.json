@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "name": "Project for project managers",
+      "description": "Proyecto para gestionar diferentes proyectos de software y tener una mejor gestión",
+      "tecnology": ["nestjs", "node"],
+      "repoName" : "project-manager-api"
+    },
+    {
+      "name": "Project to find roommate",
+      "description": "Web application that allows you to organize groups to rent housing and find roommates with artificial intelligence",
+      "tecnology": ["java"],
+      "repoName" : "back-end-mtr"
+    }
+  ]
+}

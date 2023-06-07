@@ -33,7 +33,7 @@
       "name": "Luz del sur",
       "description": "Luz del Sur es una empresa privada de distribución de electricidad",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/luz-del-sur.png?raw=true",
-      "start-date": "08/11/2021",
+      "start_date": "08/11/2021",
       "end_date": "01/04/2022",
       "cargo": "Practicante de ingeniero de sistemas"
     }
