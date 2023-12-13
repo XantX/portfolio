@@ -4,13 +4,22 @@
       "name": "Proyecto para proyect managers",
       "description": "Proyecto para gestionar diferentes proyectos de software y tener una mejor gestión",
       "tecnology": ["nestjs", "node"],
-      "repoName" : "project-manager-api"
+      "repoName" : "project-manager-api",
+      "status": "active"
     },
     {
       "name": "Proyecto para encontrar roommate",
       "description": "Aplicación web que permite organizar grupos para alquilar viviendas y encontrar compañeros con inteligencia artificial",
       "tecnology": ["java"],
-      "repoName" : "back-end-mtr"
+      "repoName" : "back-end-mtr",
+      "status": ""
+    },
+    {
+      "name": "Proyecto para documentar mi dia",
+      "description": "Aplicación de línea de comando para registrar mis actividades del día",
+      "tecnology": ["rust"],
+      "repoName" : "my-day",
+      "status": ""
     }
   ]
 }

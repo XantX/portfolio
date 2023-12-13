@@ -29,6 +29,7 @@ function Projects() {
     <div id="projects" className="carrousel-container mt-5 mb-5">
       <div className="text-center">
         <h1>{t("title")}</h1>
+        <br/>
       </div>
       <div
         id="carouselExampleAutoplaying"
@@ -38,11 +39,10 @@ function Projects() {
         <div className="carousel-inner">
           {projectData ? (
             projectData.projects.map((project, index) => (
-              <div key={index} className="carousel-item active">
+              <div key={index} className={`carousel-item ${project.status}`}>
                 <div className="container">
                   <div
-                    className={`card ${screenWidth > 767 ? "text-start" : "text-center"
-                      }`}
+                    className={`card ${screenWidth > 767 ? "text-start" : "text-center"}  proyect-card`}
                   >
                     <div className="card-body">
                       <div className="row">
