@@ -63,7 +63,7 @@
 }
 
 .orange {
-  color: var(--orange);
+  color: var(--orange) !important;
 }
 
 /* Dim Colors */
@@ -102,30 +102,51 @@
 
 /* Foreground Colors */
 
-.fg {
+.fg-text {
   color: var(--fg) !important;
 }
 
+.fg1-text {
+  color: var(--fg1) !important;
+}
+
+.fg2-text {
+  color: var(--fg2) !important;
+}
+
+.fg3-text {
+  color: var(--fg3) !important;
+}
+
+.fg4-text {
+  color: var(--fg4) !important;
+}
+/* Foreground Colors */
+
+.fg {
+  background-color: var(--fg) !important;
+}
+
 .fg1 {
-  color: var(--fg1);
+  background-color: var(--fg1) !important;
 }
 
 .fg2 {
-  color: var(--fg2);
+  background-color: var(--fg2) !important;
 }
 
 .fg3 {
-  color: var(--fg3);
+  background-color: var(--fg3) !important;
 }
 
 .fg4 {
-  color: var(--fg4);
+  background-color: var(--fg4) !important;
 }
 
 /* Background Colors */
 
 .bg-hard {
-  color: var(--bg_h);
+  color: var(--bg_h) !important;
 }
 
 .bg {

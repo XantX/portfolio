@@ -1,7 +1,9 @@
 {
   "title": "Mi Portafolio",
-  "greetings": "Hola mi nombre es",
+  "greetings": "Hola bienvenido a mi portafolio",
   "name": "Sebastián",
   "aka": "XantX",
-  "ligature": "también conocido como"
+  "ligature": "también conocido como",
+  "main-skill": "Me especializo en desarrollo ",
+  "skill": "Backend"
 }

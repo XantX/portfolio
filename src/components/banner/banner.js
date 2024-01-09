@@ -8,8 +8,11 @@ function Banner() {
     <div className="banner-container text-wrap"  >
       <div className="row" id="home">
         <div className="col left">
-          <h1 className="title">{t('title')}</h1>
-          <p className="subtitle">{t('greetings')} <strong className="blue">{t('name')}</strong> {t('ligature')} <strong className="blue">{t('aka')}</strong></p>
+          <h1 className="title">Sebastian Diaz</h1>
+          <p className="subtitle">
+              {t('greetings')}. 
+              <br/>
+              {t('main-skill')} <strong className="blue">{t('skill')}</strong></p>
         </div>
         <div className="col col-user-card">
           <UserCard></UserCard>

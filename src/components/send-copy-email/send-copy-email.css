@@ -1,0 +1,8 @@
+.email-box {
+  margin: 0;
+}
+
+.button-card-email {
+  background-color: var(--bg);
+  font-size: 1.5rem;
+}

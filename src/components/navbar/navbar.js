@@ -1,9 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import TraslateButton from "../traslate-button/traslate-button";
 import { useTranslation } from "react-i18next";
 import './navbar.css';
-import CvDowndloadButton from "../cv-download-button/cv-download-button";
+import ButtonTooltip from "../button-tooltip/button-tooltip";
+import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import pdf from '../../files/cv-sebastian-diaz-torres.pdf';
 
 function Navbar() {
   const { t } = useTranslation('navbar')
@@ -48,24 +49,21 @@ function Navbar() {
             </li>
           </ul>
           <div className="icons-container me-4">
-            <CvDowndloadButton></CvDowndloadButton>
-            <a
-              className="gruv-nav-link nav-link"
+            <ButtonTooltip
+              href={pdf}
+              icon={faFileArrowDown}
+              button_message="cv">
+            </ButtonTooltip>
+            <ButtonTooltip
               href="https:\\github.com\XantX"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-
-            <a
-              className="gruv-nav-link nav-link"
+              icon={faGithub}
+              button_message="github"
+            ></ButtonTooltip>
+            <ButtonTooltip
               href="https:\\www.linkedin.com\in\sebastian-diaz-torres-43058a161"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
+              icon={faLinkedin}
+              button_message="linkden"
+            ></ButtonTooltip>
             <TraslateButton></TraslateButton>
           </div>
         </div>

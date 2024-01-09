@@ -1,3 +1,7 @@
 {
-  "cv": "Download my resume"
+  "cv": "Download my resume",
+  "github": "Go to my github",
+  "linkden": "Go to my linkden",
+  "copy-email": "Copy my email",
+  "send-email": "Send me an email"
 }

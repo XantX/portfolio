@@ -2,6 +2,7 @@ import "./presentation-card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5, faReact, faCss3, faBootstrap, faJava, faNodeJs, faPython } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from 'react-i18next'
+import SendCopyEmail from "../send-copy-email/send-copy-email";
 
 function PresentacionCard() {
   const { t } = useTranslation('presentation_card')
@@ -28,7 +29,8 @@ function PresentacionCard() {
           <p className="card-text">
             {t('sixth_paragraph')}
           </p>
-          <hr className="hr-color border border-2 opacity-50"></hr>
+          <SendCopyEmail></SendCopyEmail>
+          <hr className="hr-color border border-2 opacity-100"></hr>
           <div className="row">
             <div className="col orange mt-2">
               <h5 className="card-title fs-4">{t('backend_skills_title')}</h5>
