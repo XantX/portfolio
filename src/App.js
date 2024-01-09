@@ -6,10 +6,12 @@ import PresentacionCard from "./components/presentation-card/presentation-card";
 import Navbar from "./components/navbar/navbar";
 import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
+import {Toaster } from "sonner"
 
 function App() {
   return (
     <div className="App">
+      <Toaster/>
       <Navbar />
       <div
         data-bs-target="#navbar-principal"

@@ -13,7 +13,7 @@ function ButtonTooltip(props) {
     setShowTooltip(false);
   }
   return (
-    <div>
+    <div className={props.className}>
       <a 
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

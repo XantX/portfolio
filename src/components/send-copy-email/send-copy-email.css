@@ -2,7 +2,22 @@
   margin: 0;
 }
 
+.clear {
+  padding: 0;
+}
+
+.email-card {
+  border-radius: 0.5rem !important;
+}
+
 .button-card-email {
   background-color: var(--bg);
   font-size: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.mail-alert {
+  border-color: var(--green);
 }
