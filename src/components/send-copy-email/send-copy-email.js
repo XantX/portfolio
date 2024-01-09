@@ -1,4 +1,4 @@
-import { faCopy, faMailBulk } from '@fortawesome/free-solid-svg-icons'
+import { faCopy } from '@fortawesome/free-solid-svg-icons'
 import ButtonTooltip from '../button-tooltip/button-tooltip'
 import './send-copy-email.css'
 import { toast } from 'sonner'
