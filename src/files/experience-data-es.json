@@ -1,7 +1,7 @@
 {
   "companies" : [
     {
-      "name": "CloudAppiPeru",
+      "name": "CloudAppiPerú",
       "description": "Expertos en la consultoría y desarrollo de APIs dentro del mundo Cloud.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
       "cargo": "Desarrollador Full stack",
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "name": "CloudAppiPeru",
+      "name": "CloudAppiPerú",
       "description": "Expertos en la consultoría y desarrollo de APIs dentro del mundo Cloud.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
       "cargo": "Practicante Desarrollador Full Stack NodeJs",
@@ -26,7 +26,7 @@
       "description": "Stefanini Group, soluciones de Inteligencia Artificial (IA) y Tecnología de la información (TI) para transformar su negocio",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/stefanini-logo.png?raw=true",
       "start_date": "06/04/2022",
-      "end_date": "09/09/2022",
+      "end_date": "09/08/2022",
       "cargo": "Analista desarrollador .NET"
     },
     {

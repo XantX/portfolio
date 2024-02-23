@@ -33,7 +33,7 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <a className=" gruv-nav-link" href="#about">
+              <a className="gruv-nav-link" href="#about">
                 {t('about_me_section')}
               </a>
             </li>

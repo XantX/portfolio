@@ -12,7 +12,7 @@ function RepoCard(props) {
     })
   }, [props.repoName])
   return (
-    <div className="text-wrap">
+    <div className="text-wrap card-repo">
       {!repo ? <h5>Loading...</h5> :
         <div className="card">
           <h5 className="card-header">

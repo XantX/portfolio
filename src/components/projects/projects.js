@@ -29,7 +29,7 @@ function Projects() {
     <div id="projects" className="carrousel-container mt-5 mb-5">
       <div className="text-center">
         <h1>{t("title")}</h1>
-        <br/>
+        <br />
       </div>
       <div
         id="carouselExampleAutoplaying"
@@ -45,8 +45,8 @@ function Projects() {
                     className={`card ${screenWidth > 767 ? "text-start" : "text-center"}  proyect-card`}
                   >
                     <div className="card-body">
-                      <div className="row">
-                        <div className={project.repoName? "col-md-6 col-sm-12 center" :"col-md-12 col-sm-12 center"}>
+                      <div className="row card-content">
+                        <div className={project.repoName ? "col-md-6 col-sm-12 center" : "col center"}>
                           <h5 className="card-title">{project.name}</h5>
                           <p className="card-text">{project.description}</p>
                           <div>
@@ -61,10 +61,13 @@ function Projects() {
                             })}
                           </div>
                         </div>
-                        { project.repoName ? 
-                          <div className="col-md-6 col-sm-12">
+                        {project.repoName ?
+                          <div className="col-md-6 col-sm-12 center">
                             <RepoCard repoName={project.repoName}></RepoCard>
-                          </div> : <a href={project.organization} rel="noreferrer" target="_blank" className="btn btn-primary">Go to project</a>
+                          </div>
+                          : <div className="center">
+                            <a href={project.organization} rel="noreferrer" target="_blank" className="btn btn-primary">Go to project</a>
+                          </div>
                         }
                       </div>
                     </div>

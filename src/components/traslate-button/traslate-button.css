@@ -4,4 +4,33 @@
   align-items: center;
   margin-left: 0.2rem;
   font-size: 1.2rem;
+  position: relative;
+}
+.custom-select select {
+  border: none; 
+  appearance: none;
+  border-radius: 5px;
+  background-color: var(--fg);
+  color: var(--bg);
+  padding: 0 40px 0 15px;
+  width: 100%;
+}
+
+.custom-select select option {
+  background-color: var(--fg);
+  color: var(--bg);
+}
+
+.custom-select .icon-container {
+  width: 30px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container {
+  font-size: 1.5rem;
+  color: var(--bg);
 }
