@@ -9,11 +9,11 @@ function SendCopyEmail() {
   const copyToClipaboard = () => {
     navigator.clipboard.writeText('sebastian.diaz.pe@cloudappi.net').then(() => {
     })
-    .catch((err) => {
-      console.error(err)
-    })
-    toast(t('copy-email', { ns: 'alert_messages'}), {
-      style : {
+      .catch((err) => {
+        console.error(err)
+      })
+    toast(t('copy-email', { ns: 'alert_messages' }), {
+      style: {
         borderColor: 'var(--aqua)',
         backgroundColor: 'var(--aqua)',
         color: 'var(--bg)',
@@ -26,7 +26,7 @@ function SendCopyEmail() {
     <div className="container clear">
       <h3>{t('subtitle_email')}</h3>
       <div className='row'>
-        <div className='col-6'>
+        <div className='col-sm-9 col-md-9 col-lg-9'>
           <div className="card fg4 bg-hard">
             <div className="card-body fg4 email-card">
               <p className="email-box">
@@ -35,13 +35,13 @@ function SendCopyEmail() {
             </div>
           </div>
         </div>
-        <div className='col-1 center'>
-              <ButtonTooltip
-                className="button-card-email"
-                icon={faCopy}
-                action={copyToClipaboard}
-                button_message="copy-email"
-              ></ButtonTooltip>
+        <div className='col-sm-2 col-md-2 col-lg-2 center'>
+          <ButtonTooltip
+            className="button-card-email"
+            icon={faCopy}
+            action={copyToClipaboard}
+            button_message="copy-email"
+          ></ButtonTooltip>
         </div>
       </div>
     </div>

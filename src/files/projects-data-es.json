@@ -1,11 +1,19 @@
 {
   "projects": [
     {
+      "name": "Audio descripciones con image captioning",
+      "description": "Proyecto para agregar audiodescripciones automáticas con image captioning.",
+      "tecnology": ["python"],
+      "repoName" : "",
+      "status": "active",
+      "organization": "https://eyeeassist.github.io/docs/"
+    },
+    {
       "name": "Proyecto para proyect managers",
       "description": "Proyecto para gestionar diferentes proyectos de software y tener una mejor gestión",
       "tecnology": ["nestjs", "node"],
       "repoName" : "project-manager-api",
-      "status": "active"
+      "status": ""
     },
     {
       "name": "Proyecto para encontrar roommate",
@@ -20,6 +28,20 @@
       "tecnology": ["rust"],
       "repoName" : "my-day",
       "status": ""
+    },
+    {
+      "name": "Juesto de texto de god of war",
+      "description": "Juego para consola de comandos que narra la historia de kratos de los juegos god of war. La historia se va narrando bajo una estructura de árbol.",
+      "tecnology": ["rust"],
+      "repoName" : "GoWTh",
+      "status": ""
+    },
+    {
+      "name": "Api con autenticacion",
+      "description": "Ejemplo de api autenticada con json web tokens.",
+      "tecnology" : ["typescript", "nestjs", "node"],
+      "repoName" : "jwt-auth-example",
+      "status" : ""
     }
   ]
 }

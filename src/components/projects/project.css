@@ -1,4 +1,4 @@
-.tech-icon{
+.tech-icon-project{
   font-size: 4.5rem;
   color: var(--fg);
   text-decoration: none;
@@ -10,8 +10,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.proyect-card {
-  height: 23rem;
 }

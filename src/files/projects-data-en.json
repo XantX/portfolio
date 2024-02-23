@@ -1,11 +1,12 @@
 {
   "projects": [
     {
-      "name": "Project for project managers",
-      "description": "Project to manage different software projects and to have a better management.",
-      "tecnology": ["nestjs", "node"],
-      "repoName" : "project-manager-api",
-      "status": "active"
+      "name": "Audio descriptions with image captioning.",
+      "description": "Project to add automatic audio descriptions with image captioning.",
+      "tecnology": ["python"],
+      "repoName" : "",
+      "status": "active",
+      "organization": "https://eyeeassist.github.io/docs/"
     },
     {
       "name": "Project to find roommate",
@@ -20,6 +21,21 @@
       "tecnology": ["rust"],
       "repoName" : "my-day",
       "status": ""
+    },
+    {
+      "name": "God of war text game",
+      "description": "Command console game that tells the story of kratos from the god of war games. The story is narrated under a tree structure.",
+      "tecnology" : ["rust"],
+      "repoName" : "GoWTh",
+      "status" : ""
+    },
+    {
+      "name": "Auth api example",
+      "description": "Example of api with authenticaton with jwt",
+      "tecnology" : ["typescript", "nestjs", "node"],
+      "repoName" : "jwt-auth-example",
+      "status" : ""
     }
+
   ]
 }

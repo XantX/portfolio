@@ -46,7 +46,7 @@ function Projects() {
                   >
                     <div className="card-body">
                       <div className="row">
-                        <div className="col-md-6 col-sm-12 center">
+                        <div className={project.repoName? "col-md-6 col-sm-12 center" :"col-md-12 col-sm-12 center"}>
                           <h5 className="card-title">{project.name}</h5>
                           <p className="card-text">{project.description}</p>
                           <div>
@@ -54,16 +54,18 @@ function Projects() {
                               const Icon = myIcons.get(tecnology);
                               if (Icon) {
                                 return (
-                                  <Icon key={index} className="tech-icon" />
+                                  <Icon key={index} className="tech-icon-project" />
                                 );
                               }
                               return null;
                             })}
                           </div>
                         </div>
-                        <div className="col-md-6 col-sm-12">
-                          <RepoCard repoName={project.repoName}></RepoCard>
-                        </div>
+                        { project.repoName ? 
+                          <div className="col-md-6 col-sm-12">
+                            <RepoCard repoName={project.repoName}></RepoCard>
+                          </div> : <a href={project.organization} target="_blank" className="btn btn-primary">Go to project</a>
+                        }
                       </div>
                     </div>
                   </div>
