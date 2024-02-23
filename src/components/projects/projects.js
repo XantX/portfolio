@@ -64,7 +64,7 @@ function Projects() {
                         { project.repoName ? 
                           <div className="col-md-6 col-sm-12">
                             <RepoCard repoName={project.repoName}></RepoCard>
-                          </div> : <a href={project.organization} target="_blank" className="btn btn-primary">Go to project</a>
+                          </div> : <a href={project.organization} rel="noreferrer" target="_blank" className="btn btn-primary">Go to project</a>
                         }
                       </div>
                     </div>
