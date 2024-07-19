@@ -1,21 +1,23 @@
-.background{
+.background {
   background-color: var(--bg);
 }
 
-@media screen and ( max-width: 800px) {
+@media screen and (max-width: 800px) {
   .col-user-card {
     display: flex;
     justify-content: center;
   }
 }
 
-.gruv-nav-link:active{
+.gruv-nav-link:active {
   color: var(--green) !important;
 }
-.gruv-nav-link:hover{
+
+.gruv-nav-link:hover {
   color: var(--green) !important;
 }
-.gruv-nav-link{
+
+.gruv-nav-link {
   display: block;
   color: var(--fg) !important;
   text-decoration: none;
@@ -23,29 +25,29 @@
 }
 
 
-.active{
-  color: var(--green)!important;
+.active {
+  color: var(--green) !important;
 }
 
-.colors{
+.colors {
   color: var(--fg);
 }
 
-.gruv-nav-brand{
+.gruv-nav-brand {
   color: var(--fg);
   text-decoration: none;
   padding: 10px 10px;
   font-size: 1.5rem;
 }
 
-.gruv-nav-brand:hover{
+.gruv-nav-brand:hover {
   color: var(--green);
 }
 
-.icons-container{
+.icons-container {
   display: flex;
 }
 
-.icons-container .gruv-nav-link{
+.icons-container .gruv-nav-link {
   font-size: 2rem;
 }

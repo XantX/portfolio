@@ -1,13 +1,13 @@
 import "./presentation-card.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5, faReact, faCss3, faBootstrap, faJava, faNodeJs, faPython } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from 'react-i18next'
 import SendCopyEmail from "../send-copy-email/send-copy-email";
+import TechIcon from "../tech-icon/tech-icon";
 
 function PresentacionCard() {
   const { t } = useTranslation('presentation_card')
   return (
-    <div className="container pt-5 pb-5"  id="about">
+    <div className="container pt-5 pb-5" id="about">
       <div className="card">
         <div className="card-body">
           <h5 className="card-title fs-3 ">{t('title')}</h5>
@@ -38,9 +38,18 @@ function PresentacionCard() {
                 {t('backend_skills_content')}
               </p>
               <div className="icons-container me-4">
-                  <FontAwesomeIcon className="tech-icon" icon={faJava} />
-                  <FontAwesomeIcon className="tech-icon" icon={faNodeJs} />
-                  <FontAwesomeIcon className="tech-icon" icon={faPython} />
+                <TechIcon
+                  name="Java"
+                  icon={faJava}
+                ></TechIcon>
+                <TechIcon
+                  name="NodeJs"
+                  icon={faNodeJs}
+                ></TechIcon>
+                <TechIcon
+                  name="Python"
+                  icon={faPython}
+                ></TechIcon>
               </div>
             </div>
             <div className="col yellow mt-2">
@@ -49,10 +58,25 @@ function PresentacionCard() {
                 {t('frontend_skills_content')}
               </p>
               <div className="icons-container me-4">
-                <FontAwesomeIcon className="tech-icon" icon={faHtml5} />
-                <FontAwesomeIcon className="tech-icon" icon={faCss3} />
-                <FontAwesomeIcon className="tech-icon" icon={faBootstrap} />
-                <FontAwesomeIcon className="tech-icon" icon={faReact} />
+                <TechIcon
+                  name="Html"
+                  icon={faHtml5}
+                ></TechIcon>
+
+                <TechIcon
+                  name="Css"
+                  icon={faCss3}
+                ></TechIcon>
+
+                <TechIcon
+                  name="Bootstrap"
+                  icon={faBootstrap}
+                ></TechIcon>
+
+                <TechIcon
+                  name="React"
+                  icon={faReact}
+                ></TechIcon>
               </div>
             </div>
           </div>

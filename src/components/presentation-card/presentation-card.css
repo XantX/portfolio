@@ -1,9 +1,14 @@
-.hr-color{
-    border-color: var(--aqua) !important;
+.hr-color {
+  border-color: var(--aqua) !important;
 }
-.tech-icon{
+
+.tech-icon {
   font-size: 3rem !important;
   color: var(--fg);
   text-decoration: none;
   padding: 10px 10px;
+}
+
+.tech-icon:hover {
+  color: var(--blue) !important;
 }

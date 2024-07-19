@@ -14,16 +14,16 @@ function ButtonTooltip(props) {
   }
   return (
     <div className={props.className}>
-      <a 
+      <a
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={props.action}
-        className='gruv-nav-link nav-link'
+        className={'gruv-nav-link nav-link'}
         href={props.href}
         target="_blank"
         rel="noopener noreferrer"
         download={props.download}>
-        <FontAwesomeIcon icon={props.icon}/>
+        <FontAwesomeIcon icon={props.icon} /> {props.text}
       </a>
       {showTooltip && (
         <Tooltip message={t(props.button_message)} />
