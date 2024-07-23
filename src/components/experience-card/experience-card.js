@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './experience-card.css'
-import { faCss3 } from "@fortawesome/free-brands-svg-icons";
 import TechIcon from '../tech-icon/tech-icon';
 import { myFontAwesomeIcons } from '../../shared/icons-table';
 function ExpecienceCard(props) {
