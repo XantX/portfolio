@@ -2,5 +2,7 @@
   "title": "Mi experiencia",
   "description": "Mi experiencia como desarrollador de software",
   "work_state_active": "Trabajando actualmente",
-  "work_state_inactive": "Trabajando hasta"
+  "work_state_inactive": "Trabajando hasta",
+  "description_tag": "Descripción",
+  "position_tag": "Cargo"
 }

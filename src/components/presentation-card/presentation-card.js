@@ -62,12 +62,10 @@ function PresentacionCard() {
                   name="Html"
                   icon={faHtml5}
                 ></TechIcon>
-
                 <TechIcon
                   name="Css"
                   icon={faCss3}
                 ></TechIcon>
-
                 <TechIcon
                   name="Bootstrap"
                   icon={faBootstrap}

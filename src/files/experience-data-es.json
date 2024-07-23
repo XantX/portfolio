@@ -2,40 +2,48 @@
   "companies" : [
     {
       "name": "CloudAppiPerú",
-      "description": "Expertos en la consultoría y desarrollo de APIs dentro del mundo Cloud.",
+      "description": "Desarrollé y mantuve APIs en varios lenguajes, siguiendo buenas prácticas y arquitecturas hexagonal y limpia, con experiencia en desarrollo cloud y microservicios.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
       "cargo": "Desarrollador Full stack",
       "start_date": "01/04/2023",
       "tecnologias": [
-        "faNodeJs"
+        "node",
+        "python",
+        "java"
       ]
     },
     {
       "name": "CloudAppiPerú",
-      "description": "Expertos en la consultoría y desarrollo de APIs dentro del mundo Cloud.",
+      "description": "Mantuve apis con javascript y desarrollo funcionalidades con ionic para una aplicacion movil.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
       "cargo": "Practicante Desarrollador Full Stack NodeJs",
       "start_date": "04/11/2022",
       "end_date": "31/03/2023",
       "tecnologias": [
-        "faNodeJs"
+        "node",
+        "python",
+        "java"
       ]
     },
     {
       "name": "Stefanini",
-      "description": "Stefanini Group, soluciones de Inteligencia Artificial (IA) y Tecnología de la información (TI) para transformar su negocio",
+      "description": "Me encargué de dar soporte a aplicaciones de generación de reportes con C#.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/stefanini-logo.png?raw=true",
       "start_date": "06/04/2022",
       "end_date": "09/08/2022",
-      "cargo": "Analista desarrollador .NET"
+      "cargo": "Analista desarrollador .NET",
+      "tecnologias": [
+      ]
     },
     {
       "name": "Luz del sur",
-      "description": "Luz del Sur es una empresa privada de distribución de electricidad",
+      "description": "Me encargué de dar soporte a una aplicación de generación de facturas para grandes clientes con C#.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/luz-del-sur.png?raw=true",
       "start_date": "08/11/2021",
       "end_date": "01/04/2022",
-      "cargo": "Practicante de ingeniero de sistemas"
+      "cargo": "Practicante de ingeniero de sistemas",
+      "tecnologias": [
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 import './repo-card.css'
 import { useEffect, useState } from 'react';
 import api_github from './github-services/axios-api'
-import myIcons from '../../shared/icons-table'
+import { myIcons } from '../../shared/icons-table'
 
 function RepoCard(props) {
   const [repo, setRepo] = useState()
@@ -18,7 +18,7 @@ function RepoCard(props) {
           <h5 className="card-header">
             <div className='row'>
               <div className='col-1'>
-                <Icon className="github-icon"/>
+                <Icon className="github-icon" />
               </div>
               <div className='col text-end align-text'>
                 Stars: {repo.stargazers_count} Forks: {repo.forks}

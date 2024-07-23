@@ -1,6 +1,6 @@
 import "./project.css";
 import { useEffect, useState } from "react";
-import myIcons from "../../shared/icons-table";
+import { myIcons } from "../../shared/icons-table";
 import projectsEs from "../../files/projects-data-es.json";
 import projectsEn from "../../files/projects-data-en.json";
 import { useTranslation } from "react-i18next";

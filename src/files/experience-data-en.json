@@ -2,40 +2,48 @@
   "companies" : [
     {
       "name": "CloudAppiPeru",
-      "description": "Experts in consulting and development of APIs in the Cloud world.",
+      "description": "I developed and maintained APIs in several languages, following best practices and hex and clean architectures, with experience in cloud development and microservices.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
       "cargo": "Full Stack Developer",
       "start_date": "01/04/2023",
       "tecnologias": [
-        "faNodeJs"
+        "node",
+        "python",
+        "java"
       ]
     },
     {
       "name": "CloudAppiPeru",
-      "description": "Experts in consulting and development of APIs in the Cloud world.",
+      "description": "I maintained apis with javascript and developed functionalities with ionic for a mobile application.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
       "cargo": "Full Stack NodeJs Developer Intern",
       "start_date": "04/11/2022",
       "end_date": "31/03/2023",
       "tecnologias": [
-        "faNodeJs"
+        "node",
+        "python",
+        "java"
       ]
     },
     {
       "name": "Stefanini",
-      "description": "Stefanini Group, Artificial Intelligence (AI) and Information Technology (IT) solutions to transform your business",
+      "description": "I was in charge of supporting report generation applications with C#.a",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/stefanini-logo.png?raw=true",
       "start_date": "06/04/2022",
       "end_date": "09/08/2022",
-      "cargo": ".NET Developer Analyst"
+      "cargo": ".NET Developer Analyst",
+      "tecnologias": [
+      ]
     },
     {
       "name": "Luz del sur",
-      "description": "Luz del Sur is a private electricity distribution company.",
+      "description": "I was in charge of supporting an invoice generation application for large customers with C#.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/luz-del-sur.png?raw=true",
       "start_date": "08/11/2021",
       "end_date": "01/04/2022",
-      "cargo": "Systems Engineer Intern"
+      "cargo": "Systems Engineer Intern",
+      "tecnologias": [
+      ]
     }
   ]
 }

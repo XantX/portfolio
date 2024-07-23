@@ -11,7 +11,7 @@ function TechIcon(props) {
     setShowTooltip(false);
   }
   return (
-    <div>
+    <div className={props.className} key={`${props.name - props.index}`}>
       <FontAwesomeIcon
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
