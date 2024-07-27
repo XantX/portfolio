@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.cac5d3eb.css",
-    "main.js": "/static/js/main.ce5d3884.js",
-    "static/media/cv-sebastian-diaz-torres.pdf": "/static/media/cv-sebastian-diaz-torres.f507967fa0e77dd9e7e0.pdf",
+    "main.css": "/static/css/main.d5bda1a4.css",
+    "main.js": "/static/js/main.f35c4d61.js",
+    "static/media/CV-SebastianDiazTorresES.pdf": "/static/media/CV-SebastianDiazTorresES.e31f622c54a821ccd9e9.pdf",
+    "static/media/CV-SebastianDiazTorresEN.pdf": "/static/media/CV-SebastianDiazTorresEN.dec7b1bb742d3d2735f2.pdf",
     "index.html": "/index.html",
-    "main.cac5d3eb.css.map": "/static/css/main.cac5d3eb.css.map",
-    "main.ce5d3884.js.map": "/static/js/main.ce5d3884.js.map"
+    "main.d5bda1a4.css.map": "/static/css/main.d5bda1a4.css.map",
+    "main.f35c4d61.js.map": "/static/js/main.f35c4d61.js.map"
   },
   "entrypoints": [
-    "static/css/main.cac5d3eb.css",
-    "static/js/main.ce5d3884.js"
+    "static/css/main.d5bda1a4.css",
+    "static/js/main.f35c4d61.js"
   ]
 }
