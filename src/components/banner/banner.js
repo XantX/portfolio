@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import ButtonTooltip from "../button-tooltip/button-tooltip";
 import UserCard from "../github-card/user-card";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
-import pdf from '../../files/cv-sebastian-diaz-torres.pdf';
 import "./banner.css"
 import useFileUrl from "../../shared/download-cv";
 

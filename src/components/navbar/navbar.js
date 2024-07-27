@@ -7,7 +7,7 @@ import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import useFileUrl from "../../shared/download-cv";
 
 function Navbar() {
-  const { t, i18n } = useTranslation('navbar')
+  const { t } = useTranslation('navbar')
   const cvUrl = useFileUrl()
   return (
     <nav
