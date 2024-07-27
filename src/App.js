@@ -21,8 +21,8 @@ function App() {
         tabIndex="0"
       >
         <Banner />
-        <PresentacionCard />
         <Experience />
+        <PresentacionCard />
         <Projects />
       </div>
     </div>

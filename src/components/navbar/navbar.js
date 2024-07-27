@@ -4,10 +4,11 @@ import { useTranslation } from "react-i18next";
 import './navbar.css';
 import ButtonTooltip from "../button-tooltip/button-tooltip";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
-import pdf from '../../files/cv-sebastian-diaz-torres.pdf';
+import useFileUrl from "../../shared/download-cv";
 
 function Navbar() {
-  const { t } = useTranslation('navbar')
+  const { t, i18n } = useTranslation('navbar')
+  const cvUrl = useFileUrl()
   return (
     <nav
       className="sticky-top navbar navbar-expand-lg background"
@@ -50,7 +51,7 @@ function Navbar() {
           </ul>
           <div className="icons-container me-4">
             <ButtonTooltip
-              href={pdf}
+              href={cvUrl}
               icon={faFileArrowDown}
               button_message="cv">
             </ButtonTooltip>

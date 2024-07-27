@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import pdf from '../../files/cv-sebastian-diaz-torres.pdf'
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Tooltip from '../tooltip/tooltip';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import useFileUrl from '../../shared/download-cv';
 
 function CvDowndloadButton() {
   const { t } = useTranslation('tooltip_messages');
   const [showTooltip, setShowTooltip] = useState();
+  const cvUrl = useFileUrl()
   function handleMouseEnter() {
     setShowTooltip(true);
   }
@@ -16,15 +17,15 @@ function CvDowndloadButton() {
   }
   return (
     <div>
-      <a 
+      <a
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         className='gruv-nav-link nav-link'
-        href={pdf}
+        href={cvUrl}
         target="_blank"
         rel="noopener noreferrer"
         download="cv-sebastindiaztorres.pdf">
-        <FontAwesomeIcon icon={faFileArrowDown}/>
+        <FontAwesomeIcon icon={faFileArrowDown} />
       </a>
       {showTooltip && (
         <Tooltip message={t('cv')} />

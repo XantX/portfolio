@@ -4,9 +4,11 @@ import UserCard from "../github-card/user-card";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import pdf from '../../files/cv-sebastian-diaz-torres.pdf';
 import "./banner.css"
+import useFileUrl from "../../shared/download-cv";
 
 function Banner() {
   const { t } = useTranslation('banner');
+  const cvUrl = useFileUrl()
   return (
     <div className="banner-container text-wrap"  >
       <div className="row" id="home">
@@ -20,7 +22,7 @@ function Banner() {
             </p>
             <ButtonTooltip
               className="cta-download-resume"
-              href={pdf}
+              href={cvUrl}
               icon={faFileArrowDown}
               text={t('cv')}
               button_message="cv">

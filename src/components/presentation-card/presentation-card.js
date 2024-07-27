@@ -15,12 +15,6 @@ function PresentacionCard() {
             {t('first_paragraph')}
           </p>
           <p className="card-text">
-            {t('second_paragraph')}
-          </p>
-          <p className="card-text">
-            {t('third_paragraph')}
-          </p>
-          <p className="card-text">
             {t('fourth_paragraph')}
           </p>
           <p className="card-text">
