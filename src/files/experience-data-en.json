@@ -2,7 +2,7 @@
   "companies" : [
     {
       "name": "CloudAppiPeru",
-      "description": "I developed and maintained APIs in several languages, following best practices and hex and clean architectures, with experience in cloud development and microservices.",
+      "description": "I developed and maintained APIs in several languages, following best practices and applying architectures such as hex and clean, and I have experience in cloud development and microservices.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
       "cargo": "Full Stack Developer",
       "start_date": "01/04/2023",
