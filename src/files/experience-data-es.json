@@ -2,9 +2,9 @@
   "companies" : [
     {
       "name": "CloudAppiPerú",
-      "description": "Desarrollé y mantuve APIs en varios lenguajes, siguiendo buenas prácticas y arquitecturas hexagonal y limpia, con experiencia en desarrollo cloud y microservicios.",
+      "description": "Desarrollé y mantuve APIs en varios lenguajes, siguiendo buenas prácticas y aplicando arquitecturas como la hexagonal y la limpia, y tengo experiencia en desarrollo en la nube y microservicios.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
-      "cargo": "Desarrollador Full stack",
+      "cargo": "Desarrollador Backend",
       "start_date": "01/04/2023",
       "tecnologias": [
         "node",
