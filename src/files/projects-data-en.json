@@ -9,6 +9,13 @@
       "organization": "https://eyeeassist.github.io/docs/"
     },
     {
+      "name": "Example of clean architecture",
+      "description": "Project to practice and have a base to make a clean architecture",
+      "tecnology": ["java"],
+      "repoName": "clean-arquitecture-example",
+      "status": ""
+    },
+    {
       "name": "Project to find roommate",
       "description": "Web application that allows you to organize groups to rent housing and find roommates with artificial intelligence",
       "tecnology": ["java"],

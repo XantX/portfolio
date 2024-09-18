@@ -9,10 +9,10 @@
       "organization": "https://eyeeassist.github.io/docs/"
     },
     {
-      "name": "Proyecto para proyect managers",
-      "description": "Proyecto para gestionar diferentes proyectos de software y tener una mejor gestión",
-      "tecnology": ["nestjs", "node"],
-      "repoName" : "project-manager-api",
+      "name": "Ejemplo de arquitectura limpia",
+      "description": "Proyecto para practicar y tener una base para hacer una arquitectura limpia",
+      "tecnology": ["java"],
+      "repoName": "clean-arquitecture-example",
       "status": ""
     },
     {
