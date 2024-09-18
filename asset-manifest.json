@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.d5bda1a4.css",
-    "main.js": "/static/js/main.2d1c9324.js",
+    "main.js": "/static/js/main.d3d400ab.js",
     "static/media/CV-SebastianDiazTorresES.pdf": "/static/media/CV-SebastianDiazTorresES.07bcfca9f373ee5ed1f2.pdf",
     "static/media/CV-SebastianDiazTorresEN.pdf": "/static/media/CV-SebastianDiazTorresEN.5a22648158426568f15d.pdf",
     "index.html": "/index.html",
     "main.d5bda1a4.css.map": "/static/css/main.d5bda1a4.css.map",
-    "main.2d1c9324.js.map": "/static/js/main.2d1c9324.js.map"
+    "main.d3d400ab.js.map": "/static/js/main.d3d400ab.js.map"
   },
   "entrypoints": [
     "static/css/main.d5bda1a4.css",
-    "static/js/main.2d1c9324.js"
+    "static/js/main.d3d400ab.js"
   ]
 }
