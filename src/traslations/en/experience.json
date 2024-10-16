@@ -3,7 +3,9 @@
   "year": "years of experience",
   "description": "My experience as a software developer",
   "work_state_active": "Currently working",
-  "work_state_inactive": "Working until",
+  "work_state_inactive": "Work",
+  "from": "From: ",
+  "to": "To: ",
   "description_tag": "Description",
   "position_tag": "Role"
 }

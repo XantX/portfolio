@@ -4,7 +4,7 @@ import './experience-card.css'
 import TechIcon from '../tech-icon/tech-icon';
 import { myFontAwesomeIcons } from '../../shared/icons-table';
 function ExpecienceCard(props) {
-  const { t } = useTranslation('experience_data');
+  const { t, i18n } = useTranslation('experience_data');
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
   useEffect(() => {
@@ -16,6 +16,27 @@ function ExpecienceCard(props) {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
+
+  const formatDateToMonthAndYear = (date) => {
+    const currentLanguage = i18n.language;
+    const nombresMeses = {
+      es: [
+        "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+        "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+      ],
+      en: [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ]
+    };
+
+    const [_, mes, anio] = date.split("/");
+
+    // Seleccionar el arreglo de nombres de meses según el idioma actual
+    const nombreMes = nombresMeses[currentLanguage]?.[parseInt(mes, 10) - 1] || nombresMeses["es"][parseInt(mes, 10) - 1];
+
+    return `${nombreMes} - ${anio}`;
+  }
 
   const formatDate = (date, format) => {
     const resultDate = format;
@@ -36,12 +57,15 @@ function ExpecienceCard(props) {
           {!props.company.end_date
             ? t('work_state_active')
             : t('work_state_inactive')}<br />
+
           {!props.company.start_date
             ? formatDate(new Date(), 'dd/mm/yy')
-            : props.company.start_date}
+            : t('from') + formatDateToMonthAndYear(props.company.start_date)}<br />
+
           {!props.company.end_date
             ? " "
-            : " - " + props.company.end_date}</h4>
+            : t('to') + formatDateToMonthAndYear(props.company.end_date)}
+        </h4>
       </div>
       <div className={`col-lg-6 col-md-6 col-sm-12 experiencia ${screenWidth > 767 ? order : ''} p-4`}>
         <div className={`card ${screenWidth > 767 ? text_position : 'text-start'}`}>
