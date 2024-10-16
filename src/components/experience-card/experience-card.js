@@ -30,7 +30,7 @@ function ExpecienceCard(props) {
       ]
     };
 
-    const [_, mes, anio] = date.split("/");
+    const [_, mes, anio] = date.split("/"); // eslint-disable-line no-unused-vars
 
     // Seleccionar el arreglo de nombres de meses según el idioma actual
     const nombreMes = nombresMeses[currentLanguage]?.[parseInt(mes, 10) - 1] || nombresMeses["es"][parseInt(mes, 10) - 1];
