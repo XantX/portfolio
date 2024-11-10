@@ -81,6 +81,7 @@ function ExpecienceCard(props) {
                     if (Icon) {
                       return (
                         <TechIcon
+                          key={index}
                           index={index}
                           name={tecnology}
                           icon={Icon}

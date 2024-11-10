@@ -7,8 +7,23 @@ import Navbar from "./components/navbar/navbar";
 import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
 import { Toaster } from "sonner"
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sebastian Diaz Torres",
+      "url": "https://sebastiandiazweb.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/sebastian-diaz-torres",
+      ]
+    });
+    document.head.appendChild(script);
+  })
   return (
     <div className="App">
       <Toaster />

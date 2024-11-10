@@ -13,7 +13,7 @@ function Banner() {
       <div className="row" id="home">
         <div className="col-lg-8 col-md-12 col-sm-12 center">
           <div>
-            <h1 className="title  text-start">Sebastian Diaz</h1>
+            <h1 className="title  text-start">Sebastian Diaz Torres</h1>
             <p className="subtitle">
               {t('greetings')}.
               <br />
