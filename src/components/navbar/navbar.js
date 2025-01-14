@@ -1,14 +1,14 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import TraslateButton from "../traslate-button/traslate-button";
 import { useTranslation } from "react-i18next";
-import './navbar.css';
+import "./navbar.css";
 import ButtonTooltip from "../button-tooltip/button-tooltip";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import useFileUrl from "../../shared/download-cv";
 
 function Navbar() {
-  const { t } = useTranslation('navbar')
-  const cvUrl = useFileUrl()
+  const { t } = useTranslation("navbar");
+  const cvUrl = useFileUrl();
   return (
     <nav
       className="sticky-top navbar navbar-expand-lg background"
@@ -34,18 +34,18 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <a className="gruv-nav-link" href="#about">
-                {t('about_me_section')}
+              <a className="gruv-nav-link" href="#experience">
+                {t("experience_section")}
               </a>
             </li>
             <li className="nav-item">
-              <a className="gruv-nav-link" href="#experience">
-                {t('experience_section')}
+              <a className="gruv-nav-link" href="#about">
+                {t("about_me_section")}
               </a>
             </li>
             <li className="nav-item">
               <a className="gruv-nav-link" href="#projects">
-                {t('projects_section')}
+                {t("projects_section")}
               </a>
             </li>
           </ul>
@@ -53,8 +53,8 @@ function Navbar() {
             <ButtonTooltip
               href={cvUrl}
               icon={faFileArrowDown}
-              button_message="cv">
-            </ButtonTooltip>
+              button_message="cv"
+            ></ButtonTooltip>
             <ButtonTooltip
               href="https:\\github.com\XantX"
               icon={faGithub}

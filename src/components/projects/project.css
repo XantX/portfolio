@@ -1,4 +1,11 @@
-.tech-icon-project{
+.proyects-backgroung {
+  padding: 5em;
+  background-color: var(--bg_s);
+}
+.color-aqua {
+  color: var(--aqua);
+}
+.tech-icon-project {
   font-size: 4.5rem;
   color: var(--fg);
   text-decoration: none;
@@ -25,12 +32,18 @@
   .proyect-card {
     height: 40rem;
   }
+  .proyects-backgroung {
+    padding: 1em;
+  }
 }
 
 /* Small devices (phones, ≥576px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .proyect-card {
     height: 40rem;
+  }
+  .proyects-backgroung {
+    padding: 1em;
   }
 }
 
