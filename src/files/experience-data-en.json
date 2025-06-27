@@ -4,8 +4,21 @@
       "name": "CloudAppiPeru",
       "description": "I developed and maintained APIs in several languages, following best practices and applying architectures such as hex and clean, and I have experience in cloud development and microservices.",
       "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
-      "cargo": "Full Stack Developer",
+      "cargo": "Api Developer / Software Architect",
+      "start_date": "01/05/2025",
+      "tecnologias": [
+        "node",
+        "python",
+        "java"
+      ]
+    },
+    {
+      "name": "CloudAppiPeru",
+      "description": "I developed and maintained APIs in several languages, following best practices and applying architectures such as hex and clean, and I have experience in cloud development and microservices.",
+      "logo": "https://github.com/XantX/portfolio/blob/master/src/img/cloudappi.png?raw=true",
+      "cargo": "Backend developer",
       "start_date": "01/04/2023",
+      "end_date": "30/04/2025",
       "tecnologias": [
         "node",
         "python",

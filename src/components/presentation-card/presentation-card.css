@@ -1,6 +1,9 @@
 .hr-color {
   border-color: var(--aqua) !important;
 }
+.color-aqua {
+  color: var(--aqua);
+}
 
 .tech-icon {
   font-size: 3rem !important;

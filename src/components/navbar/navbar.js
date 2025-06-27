@@ -34,13 +34,18 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <a className="gruv-nav-link" href="#experience">
-                {t("experience_section")}
+              <a className="gruv-nav-link" href="#about">
+                {t("about_me_section")}
               </a>
             </li>
             <li className="nav-item">
-              <a className="gruv-nav-link" href="#about">
-                {t("about_me_section")}
+              <a className="gruv-nav-link" href="#works">
+                {t("works_section")}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="gruv-nav-link" href="#experience">
+                {t("experience_section")}
               </a>
             </li>
             <li className="nav-item">

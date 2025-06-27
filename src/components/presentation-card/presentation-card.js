@@ -10,7 +10,7 @@ function PresentacionCard() {
     <div className="container pt-5 pb-5" id="about">
       <div className="card">
         <div className="card-body">
-          <h5 className="card-title fs-3 ">{t('title')}</h5>
+          <h5 className="card-title fs-3 color-aqua">{t('title')}</h5>
           <p className="card-text">
             {t('first_paragraph')}
           </p>
@@ -26,8 +26,8 @@ function PresentacionCard() {
           <SendCopyEmail></SendCopyEmail>
           <hr className="hr-color border border-2 opacity-100"></hr>
           <div className="row">
-            <div className="col orange mt-2">
-              <h5 className="card-title fs-4">{t('backend_skills_title')}</h5>
+            <div className="col mt-2">
+              <h5 className="orange card-title fs-4">{t('backend_skills_title')}</h5>
               <p className="card-text">
                 {t('backend_skills_content')}
               </p>
@@ -46,8 +46,8 @@ function PresentacionCard() {
                 ></TechIcon>
               </div>
             </div>
-            <div className="col yellow mt-2">
-              <h5 className="card-title fs-4">{t('frontend_skills_title')}</h5>
+            <div className="col mt-2">
+              <h5 className="yellow card-title fs-4">{t('frontend_skills_title')}</h5>
               <p className="card-text">
                 {t('frontend_skills_content')}
               </p>

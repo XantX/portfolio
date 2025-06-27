@@ -1,0 +1,31 @@
+{
+  "works": [
+    {
+      "name": "Apiquality",
+      "description": "APIQuality es una plataforma y herramienta diseñada para simplificar y automatizar la gestión del ciclo de vida de las APIs (Interfaces de Programación de Aplicaciones), enfocándose en la calidad, seguridad y gobernanza",
+      "tecnology": ["typescript"],
+      "repoName" : "",
+      "status": "active",
+      "link": "https://apiquality.io/",
+      "organization": "https://apiquality.io/wp-content/uploads/2022/09/cropped-cropped-logo-apiquality-principal-1-1024x341.png"
+    },
+    {
+      "name": "Boostworker",
+      "description": "Boostworker es herramienta para la gestión del control horario de trabajadores. Cumple con la normativa con respecto al teletrabajo y aumenta la productividad de tu equipo",
+      "tecnology": ["python"],
+      "repoName": "clean-arquitecture-example",
+      "status": "",
+      "link": "https://boostworker.ai/es/homepage-2025/",
+      "organization": "https://boostworker.ai/wp-content/uploads/2022/11/BoostWorker-logo.png"
+    },
+    {
+      "name": "Book The City",
+      "description": "Mejora la experiencia de tus usuarios con la gestión de colas de espera Book The City. Lleva un mejor control de las personas que acuden a tu negocio, aumenta la productividad de tus empleados y gánate a tus usuarios desde el primer momento.",
+      "tecnology": ["javascript"],
+      "repoName" : "back-end-mtr",
+      "status": "",
+      "link": "https://bookthecity.app/",
+      "organization": "https://bookthecity.app/wp-content/uploads/2022/12/logo-book-the-city-principal-1-1024x433.png"
+    }
+  ]
+}

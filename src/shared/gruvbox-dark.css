@@ -38,6 +38,10 @@
   color: var(--red) !important;
 }
 
+.bg-green {
+  background-color: var(--green) !important;
+}
+
 .green {
   color: var(--green);
 }

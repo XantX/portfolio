@@ -20,6 +20,10 @@ import project_data_en from "./en/projects.json";
 import alert_messages_en from "./en/alert_messages.json";
 import alert_messages_es from "./es/alert_messages.json";
 
+import works_data_es from "./es/works.json";
+import works_data_en from "./en/works.json";
+
+
 const resources = {
   en: {
     github_user_card: github_traslation_en,
@@ -31,6 +35,7 @@ const resources = {
     experience_data: experience_data_en,
     projects: project_data_en,
     alert_messages: alert_messages_en,
+    works: works_data_en,
   },
   es: {
     github_user_card: github_traslation_es,
@@ -42,6 +47,7 @@ const resources = {
     experience_data: experience_data_es,
     projects: project_data_es,
     alert_messages: alert_messages_es,
+    works: works_data_es,
   },
 };
 

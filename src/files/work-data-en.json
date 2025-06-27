@@ -1,0 +1,31 @@
+{
+  "works": [
+    {
+      "name": "Apiquality",
+      "description": "APIQuality is a platform and tool designed to simplify and automate API (Application Programming Interfaces) lifecycle management, focusing on quality, security and governance",
+      "tecnology": ["typescript"],
+      "repoName": "",
+      "status": "active",
+      "link": "",
+      "organization": "https://apiquality.io/wp-content/uploads/2022/09/cropped-cropped-logo-apiquality-principal-1-1024x341.png"
+    },
+    {
+      "name": "Boostworker",
+      "description": "Boostworker is a tool for managing employee time and attendance. It complies with the regulations regarding telework and increases the productivity of your team",
+      "tecnology": ["python"],
+      "repoName": "",
+      "status": "",
+      "link": "",
+      "organization": "https://boostworker.ai/wp-content/uploads/2022/11/BoostWorker-logo.png"
+    },
+    {
+      "name": "Book The City",
+      "description": "Improve your users experience with Book The City queue management. Keep better track of people coming to your business, increase employee productivity and win over your users right out of the box.",
+      "tecnology": ["javascript"],
+      "repoName": "",
+      "status": "",
+      "link": "",
+      "organization": "https://bookthecity.app/wp-content/uploads/2022/12/logo-book-the-city-principal-1-1024x433.png"
+    }
+  ]
+}

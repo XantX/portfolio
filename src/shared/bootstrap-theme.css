@@ -10,14 +10,20 @@
   color: var(--fg);
 }
 
-.card-header{
-  background-color: var(--bg1);
-}
-
 .card-body{
   background-color: var(--bg2);
+  border-radius: 16px;
+}
+.card-header {
+  border-bottom: 0;
+  background-color: var(--bg2) !important;
+}
+
+.card-img {
+  border-radius: 0px !important;
 }
 .card{
-  border-color: var(--bg1);
+  background-color: var(--bg2);
   color: var(--fg2);
+  border-radius: 16px;
 }

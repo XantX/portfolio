@@ -5,8 +5,8 @@
   "description": "Portafolio de Sebastian Diaz Torres",
   "private": true,
   "engines": {
-    "node": "20.16.0",
-    "npm": "10.8.1"
+    "node": ">=20.16.0",
+    "npm": ">=10.8.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "6.6.0",

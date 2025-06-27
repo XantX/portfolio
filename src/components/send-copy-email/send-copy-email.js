@@ -24,7 +24,7 @@ function SendCopyEmail() {
   };
   return (
     <div className="container clear">
-      <h3>{t('subtitle_email')}</h3>
+      <h3 className="color-aqua">{t('subtitle_email')}</h3>
       <div className='row'>
         <div className='col-sm-9 col-md-9 col-lg-9'>
           <div className="card fg4 bg-hard">

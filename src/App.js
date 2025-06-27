@@ -8,6 +8,7 @@ import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
 import { Toaster } from "sonner"
 import { useEffect } from "react";
+import Work from "./components/work/work.js";
 
 function App() {
   useEffect(() => {
@@ -36,8 +37,9 @@ function App() {
         tabIndex="0"
       >
         <Banner />
-        <Experience />
         <PresentacionCard />
+        <Work />
+        <Experience />
         <Projects />
       </div>
     </div>

@@ -19,13 +19,12 @@ function UserCard() {
         <div className="card user-card">
           <p className="card-header"> {t('followers')} {user.followers} <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></p>
 
-          <img src={user.avatar_url} className="card-img-top" alt="avatar" />
+          <img src={user.avatar_url} className="card-img" alt="avatar" />
           <div className="card-body">
             <h5 className="card-title">{t('user')} {user.login} <FontAwesomeIcon icon={faUser}></FontAwesomeIcon></h5>
             <h5 className="card-title">{t('country')} {user.location} <FontAwesomeIcon icon={faEarthAmericas}></FontAwesomeIcon></h5>
             <h5 className="card-title">{t('repos')} {user.public_repos} <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>
             </h5>
-
           </div>
         </div>
       }
