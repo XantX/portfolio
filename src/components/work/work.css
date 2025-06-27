@@ -26,9 +26,10 @@
   height: 100%;
 }
 
-.card-img {
+.card-img-works {
   max-height: 80px;
   min-height: 80px;
+  width: 100%;
   object-fit: contain;
   display: block;
   margin: 0 auto;

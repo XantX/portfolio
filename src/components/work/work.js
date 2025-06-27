@@ -5,8 +5,6 @@ import worksEn from "../../files/work-data-en.json";
 import { useTranslation } from "react-i18next";
 
 function Work() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
   const { t, i18n } = useTranslation("works");
   const [workData, setWorkData] = useState(
     i18n.language === "es" ? worksEs : worksEn,
@@ -14,13 +12,6 @@ function Work() {
 
   useEffect(() => {
     setWorkData(i18n.language === "es" ? worksEs : worksEn);
-    function handleResize() {
-      setScreenWidth(window.innerWidth);
-    }
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, [i18n.language]);
 
   return (
@@ -35,7 +26,7 @@ function Work() {
               workData.works.map((work, index) => (
                 <div key={index} className="col-s-12 col-m-12 col-xl-4 mb-5">
                   <div className="card p-3">
-                    <img src={work.organization} className="card-img mb-3" alt="product-logo"/>
+                    <img src={work.organization} className="card-img-works mb-3" alt="product-logo"/>
                     <div className="card-body work-body">
                       <h5 class="card-title">{work.name}</h5>
                       <p className="card-text">{work.description}</p>
