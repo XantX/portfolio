@@ -20,29 +20,32 @@ export default function BookBanner({ books }) {
     if (!scrollRef.current || isDragging || isHovered) return;
 
     const container = scrollRef.current;
+    
+    // Guard: Don't scroll if content hasn't loaded yet or isn't scrollable
+    if (container.scrollWidth <= container.clientWidth) return;
+
     container.scrollLeft += speed;
 
-    // Seamless loop
+    // Seamless loop: reset when we've scrolled exactly half of the duplicated content
     if (container.scrollLeft >= container.scrollWidth / 2) {
       container.scrollLeft = 0;
     }
   });
 
-  const handleMouseDown = (e) => {
+  const startDragging = (clientX: number) => {
     if (!scrollRef.current) return;
     setIsDragging(true);
-    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setStartX(clientX - scrollRef.current.offsetLeft);
     setScrollLeft(scrollRef.current.scrollLeft);
   };
 
-  const handleMouseUp = () => {
+  const stopDragging = () => {
     setIsDragging(false);
   };
 
-  const handleMouseMove = (e) => {
+  const moveDragging = (clientX: number) => {
     if (!isDragging || !scrollRef.current) return;
-    e.preventDefault();
-    const x = e.pageX - scrollRef.current.offsetLeft;
+    const x = clientX - scrollRef.current.offsetLeft;
     const walk = (x - startX) * 2;
     scrollRef.current.scrollLeft = scrollLeft - walk;
 
@@ -52,6 +55,22 @@ export default function BookBanner({ books }) {
     } else if (container.scrollLeft >= container.scrollWidth / 2) {
       container.scrollLeft = 0;
     }
+  };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    startDragging(e.pageX);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    moveDragging(e.pageX);
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    startDragging(e.touches[0].pageX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    moveDragging(e.touches[0].pageX);
   };
 
   return (
@@ -64,13 +83,14 @@ export default function BookBanner({ books }) {
           className="book-banner-header"
         >
           <div>
-            <span className="curated-label">{t('subtitle')}</span>
+            <span className="curated-label">Curated Reading List</span>
             <h2 className="book-banner-title">
-              {t('title')}
+              Library <span className="ampersand">&</span> Archive
             </h2>
           </div>
           <p className="book-banner-description">
-            {t('description')}
+            A collection of literature that has shaped my perspective, 
+            from technical deep-dives to timeless classics.
           </p>
         </motion.div>
       </div>
@@ -79,17 +99,19 @@ export default function BookBanner({ books }) {
         ref={scrollRef}
         className="scroll-viewport"
         onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseUp}
+        onMouseUp={stopDragging}
         onMouseMove={handleMouseMove}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={stopDragging}
         onMouseEnter={() => setIsHovered(true)}
-        onMouseLeaveCapture={() => {
+        onMouseLeave={() => {
+          stopDragging();
           setIsHovered(false);
-          setIsDragging(false);
         }}
       >
         <div className="scroll-content">
-          {[...books, ...books, ...books].map((book, index) => (
+          {[...books, ...books].map((book, index) => (
             <div key={`${book.id}-${index}`} className="book-card-wrapper">
               <div className="book-card">
                 <img
@@ -130,10 +152,10 @@ export default function BookBanner({ books }) {
       <div className="book-banner-container book-banner-footer">
         <div className="footer-line" />
         <div className="footer-content">
-          <span>{books.length} {t('footer')}</span>
+          <span>{books.length} Volumes Cataloged</span>
           <div className="footer-update">
             <BookOpen size={12} />
-            <span>{t("footer_time")}</span>
+            <span>Updated March 2026</span>
           </div>
         </div>
       </div>
