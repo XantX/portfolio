@@ -53,6 +53,11 @@ function Navbar() {
                 {t("projects_section")}
               </a>
             </li>
+            <li className="nav-item">
+              <a className="gruv-nav-link" href="#books">
+                {t("books_section")}
+              </a>
+            </li>
           </ul>
           <div className="icons-container me-4">
             <ButtonTooltip

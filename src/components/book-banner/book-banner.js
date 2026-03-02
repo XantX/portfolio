@@ -1,11 +1,11 @@
 import { motion, useAnimationFrame } from "motion/react";
 import { Star, BookOpen } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import "./book-banner.css"
 
 export default function BookBanner({ books }) {
-  const { t, i18n } = useTranslation("books_data");
+  const { t } = useTranslation("books_data");
 
   const scrollRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -74,7 +74,7 @@ export default function BookBanner({ books }) {
   };
 
   return (
-    <section className="book-banner">
+    <section id="books" className="book-banner">
       <div className="book-banner-container">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

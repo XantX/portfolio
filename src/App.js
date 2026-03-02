@@ -16,7 +16,7 @@ import booksDataRawES from "./files/books-data-es.json";
 import booksDataRawEN from "./files/books-data-en.json";
 
 function App() {
-  const { t, i18n } = useTranslation("books_data");
+  const { i18n } = useTranslation("books_data");
   const [booksData, setBooksData] = useState(
     i18n.language === "es" ? booksDataRawES: booksDataRawEN,
   );
