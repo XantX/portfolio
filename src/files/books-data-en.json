@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "title": "The Element",
+    "author": "Ken Robinson, Lou Aronica",
+    "cover": "https://images.cdn1.buscalibre.com/fit-in/360x360/f1/ab/f1ab8f8e821a0fdebd02ba7c5cb81dec.jpg",
+    "rating": 5,
+    "year": "2021",
+    "category": "Classic",
+    "status": "read"
+  },
+  {
+    "id": "2",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "cover": "https://images.cdn3.buscalibre.com/fit-in/360x360/10/fb/10fb170d7732b7dca25ebb81ded2572d.jpg",
+    "rating": 5,
+    "year": "2008",
+    "category": "Tech",
+    "status": "read"
+  },
+  {
+    "id": "3",
+    "title": "Clean Architecture",
+    "author": "Robert C. Martin",
+    "cover": "https://m.media-amazon.com/images/I/71stxGw9JgL._AC_UF1000,1000_QL80_.jpg",
+    "rating": 5,
+    "year": "2008",
+    "category": "Tech",
+    "status": "read"
+  },
+  {
+    "id": "4",
+    "title": "Atomic Habits",
+    "author": "Paulo Coelho",
+    "cover": "https://images.cdn1.buscalibre.com/fit-in/360x360/04/ff/04ff3ab661bfe2a05ab2ac69125c8a3e.jpg",
+    "rating": 5,
+    "year": "2024",
+    "category": "SelfCare",
+    "status": "pending"
+  },
+  {
+    "id": "5",
+    "title": "Software Engineering at Google",
+    "author": "Titus Winters, Tom Manshreck, Hyrum Wright",
+    "cover": "https://m.media-amazon.com/images/I/81bSa9px6qL._SY385_.jpg",
+    "rating": 5,
+    "year": "2020",
+    "category": "Tech",
+    "status": "pending"
+  },
+  {
+    "id": "6",
+    "title": "The Pragmatic Programmer",
+    "author": "David Thomas, Andrew Hunt",
+    "cover": "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/tpp20.jpg",
+    "rating": 5,
+    "year": "2022",
+    "category": "Tech",
+    "status": "read"
+  },
+  {
+    "id": "7",
+    "title": "Design Patterns",
+    "author": "Erich Gamma, Ralph Johnson, Richard Helm",
+    "cover": "https://images.cdn2.buscalibre.com/fit-in/360x360/6e/be/6ebeeb59e092ce1513358d4560073ae1.jpg",
+    "rating": 5,
+    "year": "1994",
+    "category": "Tech",
+    "status": "pending"
+  }
+]
