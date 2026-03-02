@@ -83,14 +83,13 @@ export default function BookBanner({ books }) {
           className="book-banner-header"
         >
           <div>
-            <span className="curated-label">Curated Reading List</span>
+            <span className="curated-label">{t('subtitle')}</span>
             <h2 className="book-banner-title">
-              Library <span className="ampersand">&</span> Archive
+              {t('title')}
             </h2>
           </div>
           <p className="book-banner-description">
-            A collection of literature that has shaped my perspective, 
-            from technical deep-dives to timeless classics.
+            {t('description')}
           </p>
         </motion.div>
       </div>
@@ -152,10 +151,10 @@ export default function BookBanner({ books }) {
       <div className="book-banner-container book-banner-footer">
         <div className="footer-line" />
         <div className="footer-content">
-          <span>{books.length} Volumes Cataloged</span>
+          <span>{books.length} {t('footer')}</span>
           <div className="footer-update">
             <BookOpen size={12} />
-            <span>Updated March 2026</span>
+            <span>{t('footer_time')}</span>
           </div>
         </div>
       </div>
