@@ -6,8 +6,8 @@ import Banner from "./components/banner/banner.js";
 import BookBanner from "./components/book-banner/book-banner.js";
 import PresentacionCard from "./components/presentation-card/presentation-card";
 import Navbar from "./components/navbar/navbar";
-import Experience from "./components/experience/experience";
-import Projects from "./components/projects/projects";
+import ExperienceTimeline from "./components/experience/experience";
+import ProjectShowcase from "./components/projects/projects";
 import { Toaster } from "sonner"
 import { useEffect, useState } from "react";
 import Work from "./components/work/work.js";
@@ -15,14 +15,31 @@ import Work from "./components/work/work.js";
 import booksDataRawES from "./files/books-data-es.json";
 import booksDataRawEN from "./files/books-data-en.json";
 
+import projectsDataEs from "./files/projects-data-es.json"
+import projectsDataEn from "./files/projects-data-en.json"
+
+import experienceDataEs from './files/experience-data-es.json'
+import experienceDataEn from './files/experience-data-en.json'
+
 function App() {
   const { i18n } = useTranslation("books_data");
+
+  const [experienceData, setExperienceData] = useState(
+    i18n.language === 'es' ? experienceDataEs : experienceDataEn
+  );
+
   const [booksData, setBooksData] = useState(
     i18n.language === "es" ? booksDataRawES: booksDataRawEN,
   );
 
+  const [projectsData, setProjectsData] = useState(
+    i18n.language === "es" ? projectsDataEs: projectsDataEn,
+  );
+
   useEffect(() => {
     setBooksData(i18n.language === "es" ? booksDataRawES: booksDataRawEN);
+    setProjectsData(i18n.language === "es" ? projectsDataEs: projectsDataEn);
+    setExperienceData(i18n.language === 'es' ? experienceDataEs : experienceDataEn)
   }, [i18n.language]);
 
   useEffect(() => {
@@ -53,8 +70,8 @@ function App() {
         <Banner />
         <PresentacionCard />
         <Work />
-        <Experience />
-        <Projects />
+        <ExperienceTimeline companies={experienceData.companies}/>
+        <ProjectShowcase projects={projectsData.projects} />
         <BookBanner books={booksData}/>
       </div>
     </div>

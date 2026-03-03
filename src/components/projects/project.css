@@ -1,76 +1,182 @@
-.proyects-backgroung {
-  padding: 5em;
-  background-color: var(--bg_s);
-}
-.color-aqua {
-  color: var(--aqua);
-}
-.tech-icon-project {
-  font-size: 4.5rem;
+/* ProjectShowcase.css */
+
+.project-showcase {
+  padding: 6rem 0;
+  background-color: var(--bg);
   color: var(--fg);
-  text-decoration: none;
-  padding: 10px 10px;
+  font-family: var(--font-sans);
 }
 
-.center {
+.project-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.project-header {
+  margin-bottom: 4rem;
+  border-left: 2px solid var(--blue);
+  padding-left: 1.5rem;
+}
+
+.project-section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--blue);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.project-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: var(--fg);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background-color: var(--bg_s);
+  border: 1px solid var(--bg1);
+  border-radius: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  border-color: var(--bg4);
+  transform: translateY(-4px);
+  background-color: var(--bg1);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-status-tag {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.status-active {
+  background-color: rgba(131, 165, 152, 0.1);
+  color: var(--blue);
+  border: 1px solid var(--blue-dim);
+}
+
+.status-completed {
+  background-color: rgba(184, 187, 38, 0.1);
+  color: var(--green);
+  border: 1px solid var(--green-dim);
+}
+
+.project-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--fg1);
+}
+
+.project-description {
+  color: var(--fg3);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tech-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--fg4);
+  background-color: var(--bg2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.project-actions {
+  display: flex;
   align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--bg1);
 }
 
-.proyect-card {
-  height: 40rem;
+.repo-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--fg);
+  color: var(--bg_h);
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
 }
 
-.card-content {
-  height: 100%;
+.repo-button:hover {
+  background-color: var(--fg2);
 }
 
-/* Extra small devices (phones, <576px) */
-@media (max-width: 575.98px) {
-  .proyect-card {
-    height: 40rem;
-  }
-  .proyects-backgroung {
-    padding: 1em;
-  }
+.org-link {
+  color: var(--fg4);
+  text-decoration: none;
+  font-size: 0.75rem;
+  transition: color 0.2s ease;
 }
 
-/* Small devices (phones, ≥576px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .proyect-card {
-    height: 40rem;
-  }
-  .proyects-backgroung {
-    padding: 1em;
-  }
-}
-
-/* Medium devices (tablets, ≥768px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .proyect-card {
-    height: 25rem;
-  }
-}
-
-/* Large devices (desktops, ≥992px) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .proyect-card {
-    height: 23rem;
-  }
-}
-
-/* Extra large devices (large desktops, ≥1200px) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  .proyect-card {
-    height: 23rem;
-  }
-}
-
-/* Extra extra large devices (extra large desktops, ≥1400px) */
-@media (min-width: 1400px) {
-  .proyect-card {
-    height: 23rem;
-  }
+.org-link:hover {
+  color: var(--fg);
 }

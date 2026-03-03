@@ -6,6 +6,7 @@
       "tecnology": ["python"],
       "repoName" : "",
       "status": "active",
+      "repoUrl": "https://eyeeassist.github.io/docs/",
       "organization": "https://eyeeassist.github.io/docs/"
     },
     {
@@ -13,6 +14,8 @@
       "description": "Project to practice and have a base to make a clean architecture",
       "tecnology": ["java"],
       "repoName": "clean-arquitecture-example",
+      "repoUrl": "https://github.com/XantX/clean-arquitecture-example",
+      "organization": "https://github.com/XantX/clean-arquitecture-example",
       "status": ""
     },
     {
@@ -20,6 +23,8 @@
       "description": "Web application that allows you to organize groups to rent housing and find roommates with artificial intelligence",
       "tecnology": ["java"],
       "repoName" : "back-end-mtr",
+      "repoUrl": "https://github.com/XantX/back-end-mtr",
+      "organization": "https://github.com/XantX/back-end-mtr",
       "status": ""
     },
     {

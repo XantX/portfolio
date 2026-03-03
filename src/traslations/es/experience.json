@@ -1,11 +1,7 @@
 {
-  "title": "Mi camino",
-  "year": "años de experiencia",
-  "description": "Mi experiencia como desarrollador de software",
-  "work_state_active": "Trabajando actualmente",
-  "work_state_inactive": "Trabaje",
-  "from": "Desde: ",
-  "to": "Hasta: ",
-  "description_tag": "Descripción",
-  "position_tag": "Cargo"
+  "title": "Experiencia",
+  "subtitle": "Trayectoria profecional",
+  "years_of": "años de experiencia.",
+  "months_of": "meses de experiencia.",
+  "years_and": "años y"
 }
