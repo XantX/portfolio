@@ -1,80 +1,89 @@
 import "./presentation-card.css";
-import { faHtml5, faReact, faCss3, faBootstrap, faJava, faNodeJs, faPython } from "@fortawesome/free-brands-svg-icons";
+import "./about-me.css";
 import { useTranslation } from 'react-i18next'
 import SendCopyEmail from "../send-copy-email/send-copy-email";
-import TechIcon from "../tech-icon/tech-icon";
+import { motion } from "motion/react";
+import { Terminal, Cpu, Layout, Code2, Database, Coffee } from "lucide-react";
 
 function PresentacionCard() {
   const { t } = useTranslation('presentation_card')
-  return (
-    <div className="container pt-5 pb-5" id="about">
-      <div className="card">
-        <div className="card-body">
-          <h5 className="card-title fs-3 color-aqua">{t('title')}</h5>
-          <p className="card-text">
-            {t('first_paragraph')}
-          </p>
-          <p className="card-text">
-            {t('fourth_paragraph')}
-          </p>
-          <p className="card-text">
-            {t('fifth_paragraph')}
-          </p>
-          <p className="card-text">
-            {t('sixth_paragraph')}
-          </p>
-          <SendCopyEmail></SendCopyEmail>
-          <hr className="hr-color border border-2 opacity-100"></hr>
-          <div className="row">
-            <div className="col mt-2">
-              <h5 className="orange card-title fs-4">{t('backend_skills_title')}</h5>
-              <p className="card-text">
-                {t('backend_skills_content')}
-              </p>
-              <div className="icons-container me-4">
-                <TechIcon
-                  name="Java"
-                  icon={faJava}
-                ></TechIcon>
-                <TechIcon
-                  name="NodeJs"
-                  icon={faNodeJs}
-                ></TechIcon>
-                <TechIcon
-                  name="Python"
-                  icon={faPython}
-                ></TechIcon>
-              </div>
-            </div>
-            <div className="col mt-2">
-              <h5 className="yellow card-title fs-4">{t('frontend_skills_title')}</h5>
-              <p className="card-text">
-                {t('frontend_skills_content')}
-              </p>
-              <div className="icons-container me-4">
-                <TechIcon
-                  name="Html"
-                  icon={faHtml5}
-                ></TechIcon>
-                <TechIcon
-                  name="Css"
-                  icon={faCss3}
-                ></TechIcon>
-                <TechIcon
-                  name="Bootstrap"
-                  icon={faBootstrap}
-                ></TechIcon>
 
-                <TechIcon
-                  name="React"
-                  icon={faReact}
-                ></TechIcon>
-              </div>
+  return (
+      <section className="about-me">
+            <div className="about-container">
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="about-card"
+              >
+                <h2 className="about-title">
+                  <Terminal size={28} />
+                  {t('title')}
+                </h2>
+
+                <div className="about-text">
+                  <p>
+                    {t('first_paragraph')}
+                  </p>
+                  <p>
+                    {t('fourth_paragraph')}
+                  </p>
+                  <p>
+                    {t('fifth_paragraph')}
+                  </p>
+                  <p>
+                    {t('sixth_paragraph')}
+                  </p>
+                </div>
+
+                <SendCopyEmail></SendCopyEmail>
+
+                <div className="skills-divider" />
+
+                <div className="skills-grid">
+                  <div className="skills-group">
+                    <span className="skills-group-title">{t('backend_skills_title')}</span>
+                    <span className="skills-subtitle">{t('backend_skills_content')}</span>
+                    <div className="skills-icons">
+                      <div className="skill-item">
+                        <div className="skill-icon-wrapper"><Coffee size={24} /></div>
+                        <span className="skill-name">Java</span>
+                      </div>
+                      <div className="skill-item">
+                        <div className="skill-icon-wrapper"><Code2 size={24} /></div>
+                        <span className="skill-name">Node.js</span>
+                      </div>
+                      <div className="skill-item">
+                        <div className="skill-icon-wrapper"><Database size={24} /></div>
+                        <span className="skill-name">Python</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="skills-group">
+                    <span className="skills-group-title">{t('frontend_skills_title')}</span>
+                    <span className="skills-subtitle">{t('frontend_skills_content')}</span>
+                    <div className="skills-icons">
+                      <div className="skill-item">
+                        <div className="skill-icon-wrapper"><Layout size={24} /></div>
+                        <span className="skill-name">HTML/CSS</span>
+                      </div>
+                      <div className="skill-item">
+                        <div className="skill-icon-wrapper"><Cpu size={24} /></div>
+                        <span className="skill-name">Bootstrap</span>
+                      </div>
+                      <div className="skill-item">
+                        <div className="skill-icon-wrapper"><Code2 size={24} /></div>
+                        <span className="skill-name">React</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </section>
   );
 }
 

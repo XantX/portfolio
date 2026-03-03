@@ -1,17 +1,20 @@
-import { faCopy } from '@fortawesome/free-solid-svg-icons'
-import ButtonTooltip from '../button-tooltip/button-tooltip'
+import { Copy, Check } from "lucide-react";
 import './send-copy-email.css'
 import { toast } from 'sonner'
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 function SendCopyEmail() {
   const { t } = useTranslation(['presentation_card', 'alert_messages']);
+
+  const [copied, setCopied] = useState(false);
+  const email = "sebastian.diaz.trabajo@gmail.com";
+
   const copyToClipaboard = () => {
-    navigator.clipboard.writeText('sebastian.diaz.pe@cloudappi.net').then(() => {
-    })
-      .catch((err) => {
-        console.error(err)
-      })
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+
     toast(t('copy-email', { ns: 'alert_messages' }), {
       style: {
         borderColor: 'var(--aqua)',
@@ -23,26 +26,19 @@ function SendCopyEmail() {
     })
   };
   return (
-    <div className="container clear">
-      <h3 className="color-aqua">{t('subtitle_email')}</h3>
-      <div className='row'>
-        <div className='col-sm-9 col-md-9 col-lg-9'>
-          <div className="card fg4 bg-hard">
-            <div className="card-body fg4 email-card">
-              <p className="email-box">
-                sebastian.diaz.trabajo@gmail.com
-              </p>
-            </div>
-          </div>
+    <div className="email-section">
+      <label className="email-label">{t('subtitle_email')}</label>
+      <div className="email-input-group">
+        <div className="email-display">
+          {email}
         </div>
-        <div className='col-sm-2 col-md-2 col-lg-2 center'>
-          <ButtonTooltip
-            className="button-card-email"
-            icon={faCopy}
-            action={copyToClipaboard}
-            button_message="copy-email"
-          ></ButtonTooltip>
-        </div>
+        <button 
+          className="copy-btn" 
+          onClick={copyToClipaboard}
+          title="Copy to clipboard"
+        >
+          {copied ? <Check size={20} className="green" /> : <Copy size={20} />}
+        </button>
       </div>
     </div>
   )
