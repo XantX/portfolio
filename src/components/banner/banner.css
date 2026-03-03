@@ -1,65 +1,93 @@
-.banner-container {
-  display: flex;
-  padding: 4rem;
-  justify-content: center;
-  flex-direction: column;
-  background-color: var(--bg_s);
+/* HeroBanner.css */
+
+.hero-banner {
+  padding: 5rem 0 6rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  position: relative;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 500px) {
-  .banner-container {
-    padding: 2rem;
+.hero-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
-.title {
-  margin-top: 0px;
-  font-size: 4rem;
+.hero-content {
+  flex: 1;
+  max-width: 45rem;
+}
+
+.hero-name {
+  font-family: var(--font-mono);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .hero-name {
+    font-size: 5rem;
+  }
+}
+
+.hero-welcome {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--fg1);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.hero-specialization {
+  font-size: 1.25rem;
+  color: var(--fg3);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-specialization span {
   color: var(--aqua);
+  font-weight: 600;
+  font-family: var(--font-mono);
 }
 
-@media screen and (max-width: 500px) {
-  .title {
-    font-size: 3rem;
-  }
+.download-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--fg2);
+  color: var(--bg_h);
+  padding: 0.875rem 1.75rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
 }
 
-.subtitle {
-  font-size: 2rem;
-  color: var(--fg2);
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-content: center;
-}
-
-.cta-download-resume {
-  font-size: 1.2rem;
-  border-radius: 0.2rem !important;
-  background-color: var(--fg2) !important;
-  width: 50%;
-
-  a {
-    color: var(--bg_s) !important;
-  }
-
-  a:hover {
-    color: var(--blue) !important;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .cta-download-resume {
-    width: 100% !important;
-    margin-bottom: 2rem;
-  }
+.download-cv-btn:hover {
+  background-color: var(--fg);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }

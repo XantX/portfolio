@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import api_github from "./github-services/axios-api";
 import './user-card.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faEarthAmericas, faUser, faStar } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from 'react-i18next'
+import { motion } from "motion/react";
+import { User, Globe, BookMarked, Star } from "lucide-react";
 
 function UserCard() {
   const { t } = useTranslation('github_user_card')
@@ -14,19 +14,54 @@ function UserCard() {
     })
   }, [])
   return (
-    <div className="text-wrap user-card-container">
+    <div>
       {!user ? <h5 className="fg">{t('loading-message')}</h5> :
-        <div className="card user-card">
-          <p className="card-header"> {t('followers')} {user.followers} <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></p>
-
-          <img src={user.avatar_url} className="card-img" alt="avatar" />
-          <div className="card-body">
-            <h5 className="card-title">{t('user')} {user.login} <FontAwesomeIcon icon={faUser}></FontAwesomeIcon></h5>
-            <h5 className="card-title">{t('country')} {user.location} <FontAwesomeIcon icon={faEarthAmericas}></FontAwesomeIcon></h5>
-            <h5 className="card-title">{t('repos')} {user.public_repos} <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>
-            </h5>
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="profile-card"
+        >
+          <div className="profile-card-header">
+            <div className="followers-count">
+              <span>{t('followers')} {user.followers}</span>
+              <Star size={12} fill="var(--yellow)" color="var(--yellow)" />
+            </div>
           </div>
-        </div>
+
+          <div className="profile-image-container">
+            <img 
+              src={user.avatar_url} 
+              alt="Sebastian Diaz Torres"
+              className="profile-image"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          <div className="profile-stats">
+            <div className="stat-item">
+              <span className="stat-label">{t('user')}</span>
+              <div className="stat-value">
+                <span>{user.login}</span>
+                <User size={14} />
+              </div>
+            </div>
+            <div className="stat-item">
+              <span className="stat-label">{t('country')}</span>
+              <div className="stat-value">
+                <span>{user.location}</span>
+                <Globe size={14} />
+              </div>
+            </div>
+            <div className="stat-item">
+              <span className="stat-label">{t('repos')}</span>
+              <div className="stat-value">
+                <span>{user.public_repos}</span>
+                <BookMarked size={14} />
+              </div>
+            </div>
+          </div>
+        </motion.div>
       }
     </div>
   );

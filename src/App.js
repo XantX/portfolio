@@ -60,6 +60,7 @@ function App() {
       "url": "https://sebastiandiazweb.com",
       "sameAs": [
         "https://www.linkedin.com/in/sebastian-diaz-torres",
+        "https://github.com/XantX"
       ]
     });
     document.head.appendChild(script);

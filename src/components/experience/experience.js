@@ -4,11 +4,11 @@ import { motion } from "motion/react";
 
 import { useTranslation } from 'react-i18next'
 
-export default function ExperienceTimeline({ companies }: ExperienceTimelineProps) {
+export default function ExperienceTimeline({ companies }) {
 
   const { t } = useTranslation("experience_data");
 
-  const calculateTotalExperience = (companies: Company[]) => {
+  const calculateTotalExperience = (companies) => {
     let totalMonths = 0;
     const now = new Date();
 
@@ -16,7 +16,7 @@ export default function ExperienceTimeline({ companies }: ExperienceTimelineProp
       const [startDay, startMonth, startYear] = company.start_date.split('/').map(Number);
       const startDate = new Date(startYear, startMonth - 1, startDay);
       
-      let endDate: Date;
+      let endDate;
       if (!company.end_date || company.end_date.toLowerCase() === 'present') {
         endDate = now;
       } else {
@@ -62,7 +62,7 @@ export default function ExperienceTimeline({ companies }: ExperienceTimelineProp
           
           {companies.map((company, index) => (
             <motion.div
-              key={company.id}
+              key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}

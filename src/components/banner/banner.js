@@ -1,38 +1,40 @@
 import { useTranslation } from "react-i18next";
-import ButtonTooltip from "../button-tooltip/button-tooltip";
 import UserCard from "../github-card/user-card";
-import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import "./banner.css"
 import useFileUrl from "../../shared/download-cv";
+import { motion } from "motion/react";
+import { Download } from "lucide-react";
 
 function Banner() {
   const { t } = useTranslation('banner');
   const cvUrl = useFileUrl()
   return (
-    <div className="banner-container text-wrap"  >
-      <div className="row" id="home">
-        <div className="col-lg-8 col-md-12 col-sm-12 center">
-          <div>
-            <h1 className="title  text-start">Sebastian Diaz Torres</h1>
-            <p className="subtitle">
-              {t('greetings')}.
-              <br />
-              {t('main-skill')} <strong className="blue">{t('skill')}</strong>
-            </p>
-            <ButtonTooltip
-              className="cta-download-resume"
-              href={cvUrl}
-              icon={faFileArrowDown}
-              text={t('cv')}
-              button_message="cv">
-            </ButtonTooltip>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-12 col-sm-12 center">
-          <UserCard></UserCard>
-        </div>
+    <section className="hero-banner" id="about">
+      <div className="hero-container">
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="hero-content"
+        >
+          <span className="hero-welcome">{t('greetings')}</span>
+          <h1 className="hero-name">Sebastian Diaz Torres</h1>
+          <p className="hero-specialization">
+            {t('main-skill')}
+            <span>{t('skill')}</span>. {t('description')}
+          </p>
+          <a
+            href={cvUrl}
+            className="download-cv-btn"
+            download="sebastiandiaz-cv.pdf"
+          >
+            <Download size={18} />
+            <span>{t('cv')}</span>
+          </a>
+        </motion.div>
+        <UserCard></UserCard>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,10 +1,11 @@
 {
   "title": "My Porfolio",
-  "greetings": "¡Hi! Welcome to my portfolio",
+  "greetings": "Hi Welcome to my portfolio!",
   "name": "Sebastian",
   "aka": "XantX",
   "ligature":"aka.",
   "main-skill": "I specialize in ",
   "skill": "Backend development",
-  "cv": "Download my resume"
+  "cv": "Download my resume",
+  "description": "I build scalable, high-performance systems with a focus on clean architecture and efficient API design."
 }
