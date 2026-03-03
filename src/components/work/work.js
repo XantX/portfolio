@@ -8,7 +8,7 @@ export default function WorkShowcase({ works }) {
   const { t } = useTranslation("works");
 
   return (
-    <section className="work-showcase">
+    <section id="works" className="work-showcase">
       <div className="work-container">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
