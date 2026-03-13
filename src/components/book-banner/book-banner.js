@@ -32,7 +32,7 @@ export default function BookBanner({ books }) {
     }
   });
 
-  const startDragging = (clientX: number) => {
+  const startDragging = (clientX) => {
     if (!scrollRef.current) return;
     setIsDragging(true);
     setStartX(clientX - scrollRef.current.offsetLeft);
@@ -43,7 +43,7 @@ export default function BookBanner({ books }) {
     setIsDragging(false);
   };
 
-  const moveDragging = (clientX: number) => {
+  const moveDragging = (clientX) => {
     if (!isDragging || !scrollRef.current) return;
     const x = clientX - scrollRef.current.offsetLeft;
     const walk = (x - startX) * 2;
@@ -57,19 +57,19 @@ export default function BookBanner({ books }) {
     }
   };
 
-  const handleMouseDown = (e: React.MouseEvent) => {
+  const handleMouseDown = (e) => {
     startDragging(e.pageX);
   };
 
-  const handleMouseMove = (e: React.MouseEvent) => {
+  const handleMouseMove = (e) => {
     moveDragging(e.pageX);
   };
 
-  const handleTouchStart = (e: React.TouchEvent) => {
+  const handleTouchStart = (e) => {
     startDragging(e.touches[0].pageX);
   };
 
-  const handleTouchMove = (e: React.TouchEvent) => {
+  const handleTouchMove = (e) => {
     moveDragging(e.touches[0].pageX);
   };
 

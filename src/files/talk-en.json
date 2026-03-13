@@ -1,0 +1,17 @@
+{
+  "talks": [
+    {
+      "id": "1",
+      "title": "Design, then exist: The mantra of API-First development",
+      "audience": "GDG Open Lima",
+      "date": "13 Mar 2025",
+      "description": "Learn to design contracts before code with API-First, optimizing collaboration and the development of strategic digital products.",
+      "tags": ["OpenAPI", "API Design", "Postman", "Microcks", "Swagger"],
+      "link": "https://docs.google.com/presentation/d/123GwNjIp0M9x1pX7pvQWVAmettliZf-7vMuhb91OwX8/edit?usp=sharing",
+      "type": "drive",
+      "location": "Remote",
+      "isVirtual": true,
+      "videoLink": "https://youtube.com/watch?v=example1"
+    }
+  ]
+}

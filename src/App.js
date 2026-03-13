@@ -11,6 +11,7 @@ import ProjectShowcase from "./components/projects/projects";
 import { Toaster } from "sonner"
 import { useEffect, useState } from "react";
 import  WorkShowcase from "./components/work/work.js";
+import TalksShowcase from "./components/talks/talks";
 
 import booksDataRawES from "./files/books-data-es.json";
 import booksDataRawEN from "./files/books-data-en.json";
@@ -23,6 +24,9 @@ import experienceDataEn from './files/experience-data-en.json'
 
 import workDataEs from './files/work-data-es.json'
 import workDataEn from './files/work-data-en.json'
+
+import talkEn from './files/talk-en.json'
+import talkEs from './files/talk-es.json'
 
 function App() {
   const { i18n } = useTranslation("books_data");
@@ -43,11 +47,16 @@ function App() {
     i18n.language === "es" ? projectsDataEs: projectsDataEn,
   );
 
+  const [talkData, setTalksData] = useState(
+    i18n.language === "es" ? talkEs: talkEn,
+  );
+
   useEffect(() => {
     setBooksData(i18n.language === "es" ? booksDataRawES: booksDataRawEN);
     setProjectsData(i18n.language === "es" ? projectsDataEs: projectsDataEn);
     setExperienceData(i18n.language === 'es' ? experienceDataEs : experienceDataEn)
     setWorkData(i18n.language === 'es' ? workDataEs: workDataEn)
+    setTalksData(i18n.language === "es" ? talkEs: talkEn)
   }, [i18n.language]);
 
   useEffect(() => {
@@ -78,6 +87,7 @@ function App() {
       >
         <Banner />
         <PresentacionCard />
+        <TalksShowcase talks={talkData.talks}/>
         <WorkShowcase works={workData.works}/>
         <ExperienceTimeline companies={experienceData.companies}/>
         <ProjectShowcase projects={projectsData.projects} />

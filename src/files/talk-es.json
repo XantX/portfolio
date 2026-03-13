@@ -1,0 +1,17 @@
+{
+  "talks": [
+    {
+      "id": "1",
+      "title": "Diseño, luego existo: El mantra del desarrollo API-First",
+      "audience": "GDG Open Lima",
+      "date": "13 Mar 2025",
+      "description": "Aprende a diseñar contratos antes que código con API-First, optimizando la colaboración y el desarrollo de productos digitales estratégicos",
+      "tags": ["OpenAPI", "API Design", "Postman", "Microcks", "Swagger"],
+      "link": "https://docs.google.com/presentation/d/123GwNjIp0M9x1pX7pvQWVAmettliZf-7vMuhb91OwX8/edit?usp=sharing",
+      "type": "drive",
+      "location": "Remote",
+      "isVirtual": true,
+      "videoLink": "https://youtube.com/watch?v=example1"
+    }
+  ]
+}

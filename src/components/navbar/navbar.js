@@ -39,6 +39,11 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
+              <a className="gruv-nav-link" href="#talks">
+                {t("talks_section")}
+              </a>
+            </li>
+            <li className="nav-item">
               <a className="gruv-nav-link" href="#works">
                 {t("works_section")}
               </a>

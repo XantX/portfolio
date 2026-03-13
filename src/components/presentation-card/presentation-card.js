@@ -9,7 +9,7 @@ function PresentacionCard() {
   const { t } = useTranslation('presentation_card')
 
   return (
-      <section className="about-me">
+      <section id="about" className="about-me">
             <div className="about-container">
               <motion.div 
                 initial={{ opacity: 0, y: 30 }}
