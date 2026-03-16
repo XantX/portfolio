@@ -1,8 +1,11 @@
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 import { Presentation, Calendar, Users, ExternalLink, Download, MapPin, Video, Monitor } from "lucide-react";
 import "./talks.css";
 
 export default function TalksShowcase({ talks }) {
+  const { t } = useTranslation('talks');
+
   return (
     <section id="talks" className="talks-showcase">
       <div className="talks-container">
@@ -12,8 +15,8 @@ export default function TalksShowcase({ talks }) {
           transition={{ duration: 0.6 }}
           className="talks-header"
         >
-          <span className="talks-section-label">Public Speaking & Mentorship</span>
-          <h2 className="talks-main-title">Talks & Presentations</h2>
+          <span className="talks-section-label">{t('subtitle')}</span>
+          <h2 className="talks-main-title">{t('title')}</h2>
         </motion.div>
 
         <div className="talks-grid">
@@ -53,7 +56,7 @@ export default function TalksShowcase({ talks }) {
                       title="Watch recording"
                     >
                       <Video size={16} />
-                      <span>{talk.location} (Watch Video)</span>
+                      <span>{talk.location}{t("video_description")}</span>
                     </a>
                   ) : (
                     <>
@@ -84,12 +87,12 @@ export default function TalksShowcase({ talks }) {
                   {talk.type === "drive" ? (
                     <>
                       <ExternalLink size={18} />
-                      <span>View Presentation</span>
+                      <span>{t("presentation_button")}</span>
                     </>
                   ) : (
                     <>
                       <Download size={18} />
-                      <span>Download Slides</span>
+                      <span>{t("download_button")}</span>
                     </>
                   )}
                 </a>

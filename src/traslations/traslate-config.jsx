@@ -26,6 +26,9 @@ import works_data_en from "./en/works.json";
 import books_banner_es from "./es/book_banner.json";
 import books_banner_en from "./en/book_banner.json";
 
+import talks_es from "./es/talks.json";
+import talks_en from "./en/talks.json";
+
 const resources = {
   en: {
     github_user_card: github_traslation_en,
@@ -38,7 +41,8 @@ const resources = {
     projects: project_data_en,
     alert_messages: alert_messages_en,
     works: works_data_en,
-    books_data: books_banner_en
+    books_data: books_banner_en,
+    talks: talks_en
   },
   es: {
     github_user_card: github_traslation_es,
@@ -51,7 +55,8 @@ const resources = {
     projects: project_data_es,
     alert_messages: alert_messages_es,
     works: works_data_es,
-    books_data: books_banner_es
+    books_data: books_banner_es,
+    talks: talks_es
   },
 };
 

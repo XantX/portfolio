@@ -2,15 +2,15 @@ import "./App.css";
 import "./shared/gruvbox-dark.css";
 import "./shared/bootstrap-theme.css";
 import { useTranslation } from "react-i18next";
-import Banner from "./components/banner/banner.js";
-import BookBanner from "./components/book-banner/book-banner.js";
+import Banner from "./components/banner/banner";
+import BookBanner from "./components/book-banner/book-banner";
 import PresentacionCard from "./components/presentation-card/presentation-card";
 import Navbar from "./components/navbar/navbar";
 import ExperienceTimeline from "./components/experience/experience";
 import ProjectShowcase from "./components/projects/projects";
 import { Toaster } from "sonner"
 import { useEffect, useState } from "react";
-import  WorkShowcase from "./components/work/work.js";
+import  WorkShowcase from "./components/work/work";
 import TalksShowcase from "./components/talks/talks";
 
 import booksDataRawES from "./files/books-data-es.json";

@@ -31,6 +31,8 @@
       "name": "Project to document my day",
       "description": "Command line application to record my day's activities",
       "tecnology": ["rust"],
+      "repoUrl": "https://github.com/XantX/my-day",
+      "organization": "https://github.com/XantX/my-day",
       "repoName" : "my-day",
       "status": ""
     },
@@ -39,6 +41,8 @@
       "description": "Command console game that tells the story of kratos from the god of war games. The story is narrated under a tree structure.",
       "tecnology" : ["rust"],
       "repoName" : "GoWTh",
+      "repoUrl": "https://github.com/XantX/GoWTh",
+      "organization": "https://github.com/XantX/GoWTh",
       "status" : ""
     },
     {
@@ -46,6 +50,8 @@
       "description": "Example of api with authenticaton with jwt",
       "tecnology" : ["typescript", "nestjs", "node"],
       "repoName" : "jwt-auth-example",
+      "repoUrl": "https://github.com/XantX/jwt-auth-example",
+      "organization": "https://github.com/XantX/jwt-auth-example",
       "status" : ""
     }
 
