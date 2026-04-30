@@ -12,6 +12,42 @@
       "location": "Remote",
       "isVirtual": true,
       "videoLink": ""
+    },
+    {
+      "id": "2",
+      "title": "Webinar: Guía de estilos con Spectral",
+      "audience": "APIAddicts",
+      "date": "27 Abr 2026",
+      "description": "Sesión enfocada en la creación y aplicación de guías de estilo para APIs utilizando Spectral, asegurando la consistencia y calidad en el diseño de contratos OpenAPI.",
+      "tags": [
+        "OpenAPI",
+        "Spectral",
+        "API Governance",
+        "Linter"
+      ],
+      "link": "https://www.apiaddicts.org/webinar-gratuito-guia-de-estilos-spectral/",
+      "type": "web",
+      "location": "Remote",
+      "isVirtual": true,
+      "videoLink": "https://www.youtube.com/watch?v=UTDwivKQfT0&t"
+    },
+    {
+      "id": "3",
+      "title": "APIs y Espacios de Datos: El futuro de la soberanía del dato",
+      "audience": "CloudAPPI",
+      "date": "29 Abr 2026",
+      "description": "Exploración del papel de las APIs en la creación de espacios de datos compartidos, enfocándose en la interoperabilidad, seguridad y soberanía del dato en diferentes industrias.",
+      "tags": [
+        "APIs",
+        "Espacios de Datos",
+        "Interoperabilidad",
+        "Soberanía del Dato"
+      ],
+      "link": "https://cloudappi.net/webinar-apis-espacios-datos/",
+      "type": "web",
+      "location": "Remote",
+      "isVirtual": true,
+      "videoLink": ""
     }
   ]
 }
