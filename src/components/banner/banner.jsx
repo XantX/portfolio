@@ -9,7 +9,7 @@ function Banner() {
   const { t } = useTranslation('banner');
   const cvUrl = useFileUrl()
   return (
-    <section className="hero-banner" id="about">
+    <section className="hero-banner">
       <div className="hero-container">
         <motion.div 
           initial={{ opacity: 0, x: -30 }}

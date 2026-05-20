@@ -28,13 +28,16 @@ function PresentacionCard() {
                     {t('first_paragraph')}
                   </p>
                   <p>
+                    {t('second_paragraph')}
+                  </p>
+                  <p>
+                    {t('third_paragraph')}
+                  </p>
+                  <p>
                     {t('fourth_paragraph')}
                   </p>
                   <p>
                     {t('fifth_paragraph')}
-                  </p>
-                  <p>
-                    {t('sixth_paragraph')}
                   </p>
                 </div>
 

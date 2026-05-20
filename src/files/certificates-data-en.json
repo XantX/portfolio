@@ -1,0 +1,136 @@
+{
+  "certificates": [
+    {
+      "id": "cert-1",
+      "name": "webMethods API Management Practitioner Advanced",
+      "issuer": "IBM",
+      "date": "March 2026",
+      "expirationDate": "March 2027",
+      "description": "Advanced certification focused on the management, design, and governance of the complete API lifecycle using the webMethods platform.",
+      "tags": ["API Management", "System Deployment", "webMethods", "API Governance"],
+      "link": "https://www.credly.com/badges/ef65d288-520d-48e3-9a46-ca318f9696ef/linked_in_profile",
+      "attachment": null
+    },
+    {
+      "id": "cert-2",
+      "name": "CERTIFICACIÓN EN ETHICAL HACKING",
+      "issuer": "Postgrado UPC",
+      "date": "December 2025",
+      "expirationDate": null,
+      "description": "Validation of skills in IT security, system audits, vulnerability identification, and the execution of ethical penetration testing.",
+      "tags": ["Security Management System", "Ethical Hacking", "Cybersecurity"],
+      "link": "https://www.linkedin.com/in/sebastian-diaz-torres/",
+      "attachment": "Diploma.pdf"
+    },
+    {
+      "id": "cert-3",
+      "name": "ABET Program Graduate",
+      "issuer": "ABET",
+      "date": "December 2025",
+      "expirationDate": null,
+      "description": "Academic recognition validating the completion of an engineering program accredited under ABET's international standards of quality and excellence.",
+      "tags": ["Engineering", "International Accreditation", "Academic Quality"],
+      "link": "https://www.credly.com/badges/3c5b36a7-a52f-4836-b7f3-e85321d04d85/linked_in_profile",
+      "attachment": null
+    },
+    {
+      "id": "cert-4",
+      "name": "API Connect Sales Foundation",
+      "issuer": "IBM",
+      "date": "November 2025",
+      "expirationDate": "November 2026",
+      "description": "Validation of essential commercial and technical fundamentals regarding the architecture, capabilities, and value proposition of IBM API Connect for the API economy.",
+      "tags": ["API Development", "IBM API Connect", "API Economy"],
+      "link": "https://www.credly.com/badges/1a12b8cd-00f0-487c-a6e6-4e7306023f7f/linked_in_profile",
+      "attachment": "APIConnectSalesFoundation_Badge20251118-31-i9gghx.pdf"
+    },
+    {
+      "id": "cert-5",
+      "name": "webMethods Integration Technical Sales Intermediate",
+      "issuer": "IBM",
+      "date": "September 2025",
+      "expirationDate": "September 2026",
+      "description": "Validation of intermediate-level technical knowledge focused on the architecture, technical sales, and hybrid integration capabilities of the webMethods platform.",
+      "tags": ["Technical Sales", "Systems Integration", "webMethods"],
+      "link": "https://www.credly.com/badges/6e5a4012-5c7e-48fe-b674-cf13024fcc0c/linked_in_profile",
+      "attachment": null
+    },
+    {
+      "id": "cert-6",
+      "name": "webMethods Integration Sales Foundation",
+      "issuer": "IBM",
+      "date": "September 2025",
+      "expirationDate": "September 2026",
+      "description": "Foundational certification focused on the commercial principles, value proposition, and strategic positioning of webMethods integration solutions.",
+      "tags": ["Strategic Sales", "Integration", "webMethods"],
+      "link": "https://www.credly.com/badges/1e1cf387-fc92-4a47-bdd6-f586f6e2c721/linked_in_profile",
+      "attachment": null
+    },
+    {
+      "id": "cert-7",
+      "name": "API ARCHITECT",
+      "issuer": "API&AI Addicts",
+      "date": "December 2023",
+      "expirationDate": null,
+      "description": "Professional accreditation certifying advanced competencies in the design, governance, architectural patterns, and lifecycle of APIs in enterprise environments. Credential ID: 89211739.",
+      "tags": ["Architecture", "Systems Architecture", "API Design"],
+      "link": "https://www.credential.net/afdbebcb-ed61-4362-91a0-6274c5abfdcf#gs.20vc1k",
+      "attachment": null
+    },
+    {
+      "id": "cert-8",
+      "name": "API SECURITY",
+      "issuer": "API&AI Addicts",
+      "date": "July 2023",
+      "expirationDate": null,
+      "description": "Certification focused on API lifecycle security, endpoint protection, risk mitigation, and the application of OWASP API Security Top 10 standards. Credential ID: 78418293.",
+      "tags": ["OWASP", "API Development", "API Security"],
+      "link": "https://www.credential.net/7e03bcbb-d147-4025-8faa-489c396f9d73#gs.318ch3",
+      "attachment": null
+    },
+    {
+      "id": "cert-9",
+      "name": "Specialization Program - Python for Everybody",
+      "issuer": "Coursera",
+      "date": "August 2022",
+      "expirationDate": null,
+      "description": "Specialized program focused on programming fundamentals, data structures, web information processing, and data analysis using Python. Credential ID: QEY5CW7DBTVQ.",
+      "tags": ["Data Analysis", "Python"],
+      "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/QEY5CW7DBTVQ",
+      "attachment": null
+    },
+    {
+      "id": "cert-10",
+      "name": "Specialization Program - Scrum Master Certification",
+      "issuer": "Coursera",
+      "date": "June 2023",
+      "expirationDate": null,
+      "description": "Advanced training in the Scrum framework, agile event facilitation, artifact management, and servant leadership for high-performance teams. Credential ID: ZGVD2A34CVRL.",
+      "tags": ["Scrum", "Agile Methodologies"],
+      "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/ZGVD2A34CVRL",
+      "attachment": null
+    },
+    {
+      "id": "cert-11",
+      "name": "API DESIGN",
+      "issuer": "API&AI Addicts",
+      "date": "March 2023",
+      "expirationDate": null,
+      "description": "Specialized certification in the design and modeling of RESTful APIs under modern standards, application of API-First methodologies, and specification with OpenAPI. Credential ID: 69165466.",
+      "tags": ["API Development", "OpenAPI"],
+      "link": "https://www.credential.net/1a813b3f-9fe4-493e-be2b-6a9bda6da7b3",
+      "attachment": null
+    },
+    {
+      "id": "cert-12",
+      "name": "Scrum Fundamentals Certified",
+      "issuer": "vmedu",
+      "date": "November 2022",
+      "expirationDate": null,
+      "description": "Accreditation in foundational concepts and key principles of Scrum, agile methodologies, and project management compared against traditional environments. Credential ID: 953406.",
+      "tags": ["Agile and Waterfall Methodologies", "Scrum"],
+      "link": "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-SebastianDiazTorres-953406.pdf",
+      "attachment": null
+    }
+  ]
+}

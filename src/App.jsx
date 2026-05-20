@@ -12,6 +12,7 @@ import { Toaster } from "sonner"
 import { useEffect, useState } from "react";
 import  WorkShowcase from "./components/work/work";
 import TalksShowcase from "./components/talks/talks";
+import CertificatesCarousel from "./components/certifications/certifications";
 
 import booksDataRawES from "./files/books-data-es.json";
 import booksDataRawEN from "./files/books-data-en.json";
@@ -27,6 +28,9 @@ import workDataEn from './files/work-data-en.json'
 
 import talkEn from './files/talk-en.json'
 import talkEs from './files/talk-es.json'
+
+import certificateEn from './files/certificates-data-en.json'
+import certificateEs from './files/certificates-data-es.json'
 
 function App() {
   const { i18n } = useTranslation("books_data");
@@ -51,12 +55,17 @@ function App() {
     i18n.language === "es" ? talkEs: talkEn,
   );
 
+  const [certificateData, setCertificateData] = useState(
+    i18n.language === "es" ? certificateEs: certificateEn,
+  );
+
   useEffect(() => {
     setBooksData(i18n.language === "es" ? booksDataRawES: booksDataRawEN);
     setProjectsData(i18n.language === "es" ? projectsDataEs: projectsDataEn);
     setExperienceData(i18n.language === 'es' ? experienceDataEs : experienceDataEn)
     setWorkData(i18n.language === 'es' ? workDataEs: workDataEn)
     setTalksData(i18n.language === "es" ? talkEs: talkEn)
+    setCertificateData(i18n.language === "es" ? certificateEs: certificateEn)
   }, [i18n.language]);
 
   useEffect(() => {
@@ -88,8 +97,9 @@ function App() {
         <Banner />
         <PresentacionCard />
         <TalksShowcase talks={talkData.talks}/>
-        <WorkShowcase works={workData.works}/>
+        <CertificatesCarousel certificates={certificateData.certificates} />
         <ExperienceTimeline companies={experienceData.companies}/>
+        <WorkShowcase works={workData.works}/>
         <ProjectShowcase projects={projectsData.projects} />
         <BookBanner books={booksData}/>
       </div>
