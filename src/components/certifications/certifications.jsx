@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { Award, ExternalLink, ChevronLeft, ChevronRight, ShieldCheck, BadgeCheck, FileCheck } from "lucide-react";
-import "./CertificatesCarousel.css";
+import "./certificatesCarousel.css";
 
 export default function CertificatesCarousel({ certificates }) {
   const { t } = useTranslation('certifications');
