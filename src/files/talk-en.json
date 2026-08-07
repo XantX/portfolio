@@ -48,6 +48,25 @@
       "location": "Remote",
       "isVirtual": true,
       "videoLink": "https://www.youtube.com/watch?v=P9GMDaiOSGM"
+    },
+    {
+      "id": "4",
+      "title": "Build professional microservices in .NET using agents based on API-first methodologies",
+      "audience": "CloudAPPI",
+      "date": "29 Jul 2026",
+      "description": "Learn about APIGEN .NET and its role as a deterministic generator within the agent-based generation workflow.",
+      "tags": [
+        "APIs",
+        "OpenAPI",
+        "Agentes",
+        "Skills",
+        "APIgen"
+      ],
+      "link": "https://cloudappi.net/webinar-generacion-agentica-microservicios-arquetipos-api-first/",
+      "type": "web",
+      "location": "Remote",
+      "isVirtual": true,
+      "videoLink": "https://youtu.be/BoA7h7mYHk8?si=Jl5LhK7FmrpE0wG-"
     }
   ]
 }
