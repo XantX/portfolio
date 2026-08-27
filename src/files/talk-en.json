@@ -67,6 +67,24 @@
       "location": "Remote",
       "isVirtual": true,
       "videoLink": "https://youtu.be/BoA7h7mYHk8?si=Jl5LhK7FmrpE0wG-"
+    },
+    {
+      "id": "5",
+      "title": "Generate contract tests with openapi2soapui in the SDLC",
+      "audience": "ApiAddicts",
+      "date": "27 Agost 2026",
+      "description": "Do you know about contract testing and the openapi2soapui tool to automate it, in addition to knowing how to integrate them into your development workflow?",
+      "tags": [
+        "APIs",
+        "OpenAPI",
+        "Agentes",
+        "Skills"
+      ],
+      "link": "https://www.apiaddicts.org/contract-tests-claude-openapi2soapui/",
+      "type": "web",
+      "location": "Remote",
+      "isVirtual": true,
+      "videoLink": "https://www.youtube.com/watch?v=CaW0M86mczg"
     }
   ]
 }
