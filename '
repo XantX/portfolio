@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 import  WorkShowcase from "./components/work/work";
 import TalksShowcase from "./components/talks/talks";
 import CertificatesCarousel from "./components/certifications/certifications";
-import TalksCarrousel from "./components/carrousel/carrousel"
+import Carrousel from "./components/carrousel/carrousel"
 
 import booksDataRawES from "./files/books-data-es.json";
 import booksDataRawEN from "./files/books-data-en.json";
@@ -97,6 +97,7 @@ function App() {
       >
         <Banner />
         <PresentacionCard />
+        <TalksShowcase talks={talkData.talks}/>
         <TalksCarrousel talks={talkData.talks} />
         <CertificatesCarousel certificates={certificateData.certificates} />
         <ExperienceTimeline companies={experienceData.companies}/>
